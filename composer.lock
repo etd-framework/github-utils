@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/etd-framework/php-svg.git",
-                "reference": "b7701dbcf6c93037d677d8b9b30d678bae2c21d8"
+                "reference": "69c91070d7242fb2bce880d11863e0a586c95081"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etd-framework/php-svg/zipball/b7701dbcf6c93037d677d8b9b30d678bae2c21d8",
-                "reference": "b7701dbcf6c93037d677d8b9b30d678bae2c21d8",
+                "url": "https://api.github.com/repos/etd-framework/php-svg/zipball/69c91070d7242fb2bce880d11863e0a586c95081",
+                "reference": "69c91070d7242fb2bce880d11863e0a586c95081",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
             "support": {
                 "source": "https://github.com/etd-framework/php-svg/tree/master"
             },
-            "time": "2016-12-08 14:54:32"
+            "time": "2016-12-08 14:55:34"
         }
     ],
     "packages-dev": [],
