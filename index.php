@@ -14,7 +14,7 @@ if (!isset($_GET["text"]) || !isset($_GET["bg"])) {
 $text     = $filter->clean($_GET["text"], "WORD");
 $bg       = $filter->clean($_GET["bg"], "ALNUM");
 $color    = $filter->clean($_GET["color"], "ALNUM");
-$subpixel = $filter->clean($_GET["color"], "BOOL");
+$subpixel = $filter->clean($_GET["subpixel"], "BOOL");
 
 if (empty($text) || empty($bg)) {
     die('invalid params');
