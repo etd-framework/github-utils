@@ -11,9 +11,10 @@ if (!isset($_GET["text"]) || !isset($_GET["bg"])) {
 }
 
 // Params
-$text  = $filter->clean($_GET["text"], "WORD");
-$bg    = $filter->clean($_GET["bg"], "ALNUM");
-$color = $filter->clean($_GET["color"], "ALNUM");
+$text     = $filter->clean($_GET["text"], "WORD");
+$bg       = $filter->clean($_GET["bg"], "ALNUM");
+$color    = $filter->clean($_GET["color"], "ALNUM");
+$subpixel = $filter->clean($_GET["color"], "BOOL");
 
 if (empty($text) || empty($bg)) {
     die('invalid params');
@@ -24,6 +25,7 @@ $generator = new LabelGenerator();
 
 $generator->setBg($bg)
           ->setColor($color)
+          ->setSubpixel($subpixel)
           ->setText($text);
 
 $image = $generator->getImage();
