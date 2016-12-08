@@ -1,0 +1,28 @@
+{
+  "name": "jbanety/github-svg-labels",
+  "type": "project",
+  "description": "Générateur de labels stylisés GitHub au format SVG",
+  "homepage": "https://github.com/jbanety/github-svg-labels",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jean-Baptiste Alleaume",
+      "email": "jb.alleaume@etd-solutions.com",
+      "homepage": "http://etd-solutions.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/etd-framework/php-svg"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "joomla/filter": "2.0.*@dev",
+    "opnmind/php-svg": "dev-master@dev"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
