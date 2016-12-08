@@ -39,13 +39,13 @@ class LabelGenerator {
 
         $subpx = $this->subpixel ? 0.5 : 0;
 
-        $w = 42;
+        $w = 40;
         $h = 33;
         $x = $subpx;
         $y = $subpx;
         $r = 3;
 
-        $w += strlen($this->text) * 9;
+        $w += mb_strlen($this->text) * 9;
 
         $image = new SVGImage($w+1, $h+1);
         $doc   = $image->getDocument();
@@ -64,7 +64,7 @@ class LabelGenerator {
         $shadow = new SVGRect($x, $y, $r, $r, $w, $h-1);
         $shadow->setStyle('fill', 'none');
         $shadow->setStyle('stroke', '#0000001a');
-        $shadow->setStyle('stroke-dasharray', '0,'.($w + $h-1 - $r*2).','.($w).','.($h-1));
+        $shadow->setStyle('stroke-dasharray', '0,'.($w + $h-1 - $r * 2).','.($w).','.($h-1));
         $doc->addChild($shadow);
 
         $text = new SVGText($x + 31, $y + 16+7, $this->text, "16px", '#' . $this->color, "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'");

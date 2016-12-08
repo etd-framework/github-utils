@@ -3,20 +3,16 @@
 // Composer's autoloader
 require_once __DIR__ . '/vendor/autoload.php';
 
-// Input Filter
-$filter = new \Joomla\Filter\InputFilter();
-
-if (!isset($_GET["text"]) || !isset($_GET["bg"])) {
-    die('invalid params');
-}
+// Input
+$input = new \Joomla\Input\Input($_GET);
 
 // Params
-$text     = $filter->clean($_GET["text"], "STRING");
-$bg       = $filter->clean($_GET["bg"], "ALNUM");
-$color    = $filter->clean($_GET["color"], "ALNUM");
-$subpixel = $filter->clean($_GET["subpixel"], "BOOL");
+$text     = $input->get("text", "", "string");
+$bg       = $input->get("bg", "", "alnum");
+$color    = $input->get("color", "", "alnum");
+$subpixel = $input->get("subpixel", false, "bool");
 
-if (empty($text) || empty($bg)) {
+if (empty($text) || empty($bg) || empty($color)) {
     die('invalid params');
 }
 
@@ -28,7 +24,5 @@ $generator->setBg($bg)
           ->setSubpixel($subpixel)
           ->setText($text);
 
-$image = $generator->getImage();
-
 header('Content-Type: image/svg+xml');
-echo $image;
+echo $generator->getImage();
