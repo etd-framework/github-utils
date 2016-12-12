@@ -13,7 +13,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 function detectRequestUri() {
 
     $input = new \Joomla\Input\Input();
-
+    $_SERVER;
     $serverSSLVar    = $input->server->getString('HTTPS', '');
     $isSslConnection = (!empty($serverSSLVar) && strtolower($serverSSLVar) != 'off');
 
