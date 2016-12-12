@@ -20,6 +20,8 @@
   "require": {
     "php": ">=5.3.3",
     "joomla/input": "2.0.*@dev",
+    "joomla/registry": "2.0.*@dev",
+    "joomla/github": "2.0.*@dev",
     "opnmind/php-svg": "dev-master@dev"
   },
   "autoload": {
