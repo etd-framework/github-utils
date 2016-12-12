@@ -57,8 +57,8 @@ $labels = [
     "fonction" => "91CA55",
 
     // En attente
-    "en cours"    => "FBCA04",
-    "a surveillé" => "FBCA04",
+    "en cours"     => "FBCA04",
+    "a surveiller" => "FBCA04",
 
     // Inactive
     "invalide"   => "D2DAE1",
@@ -74,6 +74,23 @@ $labels = [
 
 echo "Owner : " . $owner . " | Repo : " . $repo;
 echo "<hr>";
+
+try {
+
+    // On récupère tous les labels
+    $existing = $github->issues->labels->getList($owner, $repo);
+
+    // On supprime les labels existants.
+    foreach ($existing as $label) {
+        $github->issues->labels->delete($owner, $repo, $label->name);
+    }
+
+    echo count($existing) . " labels supprimés.";
+
+
+} catch (\Exception $e) {
+    die($e->getCode() . " : " . $e->getMessage());
+}
 
 foreach ($labels AS $label => $color) {
 
