@@ -72,6 +72,9 @@ $labels = [
     
 ];
 
+echo "Owner : " . $owner . " | Repo : " . $repo;
+echo "<hr>";
+
 foreach ($labels AS $label => $color) {
 
     echo "Traitement du label &quot;" . htmlspecialchars($label) . "&quot;... ";
