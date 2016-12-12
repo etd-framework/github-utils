@@ -1,2 +1,2 @@
-# github-svg-label
-Générateur de labels stylisés GitHub au format SVG
+# github-utils
+Utilitaires pour GitHub chez ETD Solutions.
