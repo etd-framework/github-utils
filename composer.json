@@ -1,8 +1,8 @@
 {
-  "name": "jbanety/github-svg-labels",
+  "name": "jbanety/github-utils",
   "type": "project",
-  "description": "Générateur de labels stylisés GitHub au format SVG",
-  "homepage": "https://github.com/jbanety/github-svg-labels",
+  "description": "Utilitaires pour GitHub chez ETD Solutions.",
+  "homepage": "https://github.com/jbanety/github-utils",
   "license": "Apache-2.0",
   "authors": [
     {
