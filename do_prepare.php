@@ -74,6 +74,7 @@ $labels = [
 
 echo "Owner : " . $owner . " | Repo : " . $repo;
 echo "<hr>";
+echo "<h1>Labels</h1>";
 
 try {
 
@@ -133,3 +134,19 @@ foreach ($labels AS $label => $color) {
 
 }
 
+echo "<hr>";
+echo "<h1>Templates</h1>";
+
+$issue_template = file_get_contents(__DIR__ . "/templates/ISSUE_TEMPLATE.md");
+$pr_template    = file_get_contents(__DIR__ . "/templates/PULL_REQUEST_TEMPLATE.md");
+
+try {
+
+    $github->repositories->contents->create($owner, $repo, ".github/ISSUE_TEMPLATE.md", "issue template", base64_encode($issue_template));
+    echo "ISSUE_TEMPLATE créé.<br>";
+    $github->repositories->contents->create($owner, $repo, ".github/PULL_REQUEST_TEMPLATE.md", "PR template", base64_encode($pr_template));
+    echo "PULL_REQUEST_TEMPLATE créé.<br>";
+
+} catch (\Exception $e) {
+    die($e->getCode() . " : " . $e->getMessage());
+}

@@ -63,10 +63,10 @@ if (!$uri->isSSL()) {
 </head>
 <body>
 
-<form action="/do_labels.php" method="post">
+<form action="/do_prepare.php" method="post">
 
     <fieldset>
-        <legend>Labels</legend>
+        <legend>Connexion</legend>
         <input type="password" name="token" value="" placeholder="token">
         <input type="text" name="owner" value="jbanety" placeholder="owner">
         <input type="text" name="repo" value="" placeholder="repo">
