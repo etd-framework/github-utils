@@ -1,8 +1,24 @@
-## User Story
+## Que fait-elle ?
 
-## Critères d'acceptation
+- [ ] 
+- [ ]
+
+## Que devez-vous savoir d'autre ?
 
 - [ ] 
 - [ ] 
 
-## Définition de "Done"
+## Issues associées
+
+- [ ] 
+- [ ] 
+
+## Copies d'écran
+
+- [ ] 
+- [ ] 
+
+## Commentaires clients (si nécessaire)
+
+- [ ] 
+- [ ] 
