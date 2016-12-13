@@ -85,7 +85,7 @@ try {
         $github->issues->labels->delete($owner, $repo, $label->name);
     }
 
-    echo count($existing) . " labels supprimés.";
+    echo count($existing) . " labels supprimés.<br>";
 
 
 } catch (\Exception $e) {

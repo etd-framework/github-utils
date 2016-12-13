@@ -17,11 +17,15 @@
       "url": "https://github.com/etd-framework/php-svg"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "7.0"
+    }
+  },
   "require": {
     "php": ">=5.3.3",
     "joomla/input": "2.0.*@dev",
-    "joomla/registry": "2.0.*@dev",
-    "joomla/github": "2.0.*@dev",
+    "joomla/github": "~1.5",
     "opnmind/php-svg": "dev-master@dev"
   },
   "autoload": {
