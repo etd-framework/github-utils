@@ -1,6 +1,6 @@
 ## User Story
 
-En tant que *rôle*, je veux *tâche* ce qui me permettra de *objectif*.
+En tant que *rôle*, je veux *tâche* afin de *objectif*.
 
 ## Critères d'acceptation
 
