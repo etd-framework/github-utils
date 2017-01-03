@@ -1,0 +1,17 @@
+###########################################
+# ======= Enable the Rewrite Engine =======
+RewriteEngine On
+###########################################
+
+###########################################
+# ======= No directory listings =======
+IndexIgnore *
+Options +FollowSymLinks -Indexes
+###########################################
+
+###########################################
+# ======== SEF URL Routing ========
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.php
+###########################################

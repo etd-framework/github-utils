@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rights>
+    <section name="app" title="Application" description="Droits globaux">
+        <action name="login" title="Se connecter" description="L'utilisateur peut se connecter à l'application" />
+        <action name="admin" title="Administrer" description="Administrer" />
+        <action name="manage" title="Gérer" description="Gérer" />
+    </section>
+</rights>

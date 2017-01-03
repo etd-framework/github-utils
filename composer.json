@@ -1,0 +1,30 @@
+{
+  "name": "jbanety/etdgithubutils",
+  "type": "project",
+  "minimum-stability": "dev",
+  "description": "Etd GitHub Utils by ETD Solutions",
+  "homepage": "https://github.com/jbanety/EtdBniFeedback",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jean-Baptiste Alleaume",
+      "email": "jb.alleaume@etd-solutions.com",
+      "homepage": "http://etd-solutions.com",
+      "role": "Manager"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "joomla/di": "~2.0@dev",
+    "etdsolutions/application": "@dev",
+    "etdsolutions/controller": "@dev",
+    "etdsolutions/model": "@dev",
+    "etdsolutions/service": "@dev",
+    "etdsolutions/user": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "EtdSolutions\\EtdGithubUtils\\": "src/"
+    }
+  }
+}

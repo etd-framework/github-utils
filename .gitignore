@@ -1,0 +1,24 @@
+# IDE & System Related Files #
+.DS_Store
+.idea
+
+# OSX #
+._*
+.Spotlight-V100
+.Trashes
+
+# Local System Files (i.e. cache, logs, etc.) #
+/etc/config.json
+
+# Never ignore #
+# Only apply this rule to the main repository's gitignore files
+!/.gitignore
+
+# Composer
+/vendor
+
+# NPM
+/node_modules
+
+# Build
+/www/build

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile>
+    <tag>fr-FR</tag>
+    <name>Français</name>
+    <metadata>
+        <name>Français</name>
+        <tag>fr-FR</tag>
+        <iso>fr</iso>
+        <rtl>0</rtl>
+        <locale>fr_FR.utf8, fr_FR.UTF-8, fr_FR.UTF-8@euro, fr_FR, fre_FR, fr, france</locale>
+        <firstDay>1</firstDay>
+        <weekEnd>0,6</weekEnd>
+    </metadata>
+</metafile>
