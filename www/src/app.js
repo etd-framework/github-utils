@@ -10,45 +10,17 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Redirect } from 'react-router';
-import rp from 'request-promise';
 import history from './history.js';
 import App from './components/App.js';
-import HomePage from './components/home/HomePage.js';
-import AboutPage from './components/about/AboutPage.js';
-import AdminPage from './components/admin/AdminPage.js';
-import { apiUrl } from './constants.js';
+import LoginPage from './components/login/LoginPage.js';
 
 console.log('app.js');
-
-function isAdmin() {
-	return rp({
-		uri: apiUrl,
-		json: true,
-		qs: { action: 'isAdmin' }
-	}).then(function(isAdmin) {
-		return isAdmin;
-	}).catch(function(error) {
-		console.log(error);
-	});
-}
-
-function requireAdmin(transition) {
-	console.log(transition);
-	isAdmin().then(function(isAdmin) {
-		// redirect if not admin
-		if (!isAdmin) {
-			history.replaceState(null, '/');
-		}
-	});
-}
 
 render((
 	<Router history={history}>
 		<Route path="/" component={App}>
-			<IndexRoute component={HomePage} />
-			<Route path="about" component={AboutPage} />
-			<Route path="admin" component={AdminPage} onEnter={requireAdmin} />
+			<IndexRoute component={LoginPage} />
 			<Redirect from="*" to="/" />
 		</Route>
 	</Router>
-), document.getElementById('app'));
+), document.getElementById('etdapp'));

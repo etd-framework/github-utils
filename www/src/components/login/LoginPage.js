@@ -3,13 +3,14 @@
 import React from 'react';
 import rp from 'request-promise';
 import { apiUrl } from '../../../src/constants.js';
+import './LoginPage.scss';
 
 /**
- * Home Page
+ * Login Page
  */
-var HomePage = React.createClass({
+let LoginPage = React.createClass({
 	componentDidMount: function() {
-		console.log('HomePage.js');
+		console.log('LoginPage.js');
 	},
 	handleClick: function() {
 		rp({
@@ -26,12 +27,20 @@ var HomePage = React.createClass({
 	},
 	render: function() {
 		return (
-			<div>
-				<h2>Home</h2>
-				<button className="btn btn-primary" onClick={this.handleClick}>API Call</button>
+			<div className="login">
+				<div className="cell mx-auto">
+					<h1 className="mb-3 mx-auto">Connexion</h1>
+					<div className="form-group">
+
+					</div>
+					<div className="form-group">
+
+					</div>
+					<button className="btn btn-outline-secondary btn-block" type="submit">Connexion</button>
+				</div>
 			</div>
 		);
 	}
 });
 
-export default HomePage;
+export default LoginPage;

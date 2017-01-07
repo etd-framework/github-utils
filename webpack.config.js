@@ -55,7 +55,9 @@ module.exports = {
 			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
 			{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" },
 
-			{ test: /\.json$/, loader: 'json' }
+			{ test: /\.json$/, loader: 'json' },
+
+            { test: /\.(jpe?g|png|gif|svg)$/i, loaders: [ 'file?hash=sha512&digest=hex&name=[hash].[ext]', 'image-webpack' ] }
 		]
 	}, 
 	// needed to make request-promise work
@@ -63,5 +65,21 @@ module.exports = {
         fs: 'empty',
 		net: 'empty',
 		tls: 'empty'
-	}
+	},
+    // image webpack
+    imageWebpackLoader: {
+        mozjpeg: {
+            quality: 90
+        },
+        pngquant:{
+            quality: "65-90",
+            speed: 4
+        },
+        svgo:{
+            plugins: [
+                { removeViewBox: false },
+                { removeEmptyAttrs: false }
+            ]
+        }
+    }
 };
