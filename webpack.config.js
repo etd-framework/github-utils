@@ -12,11 +12,14 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'www/build/'),
 		filename: 'app.js'
-	}, 
-	plugins: [
+	},
+    devtool: 'source-map',
+    plugins: [
 
 		// output a separate css bundle
-		new ExtractTextPlugin('app.css'),
+		new ExtractTextPlugin('app.css', {
+            allChunks: true
+        }),
 
 		// reloads browser when the watched files change
 		new BrowserSyncPlugin({
@@ -42,6 +45,9 @@ module.exports = {
 
 			// extracts css as separate output file
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
+
+			// sass
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') },
 
 			// loads font icons for Bootstrap css
 			{ test: /\.woff(2?)(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff" },
