@@ -7,15 +7,16 @@ var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
 	entry: [
-		path.join(__dirname, 'www/src/main.js')
+		path.join(__dirname, 'www/src/app.js')
 	], 
 	output: {
 		path: path.join(__dirname, 'www/build/'),
-		filename: 'bundle.js'
+		filename: 'app.js'
 	}, 
 	plugins: [
+
 		// output a separate css bundle
-		new ExtractTextPlugin('bundle.css'),
+		new ExtractTextPlugin('app.css'),
 
 		// reloads browser when the watched files change
 		new BrowserSyncPlugin({

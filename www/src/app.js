@@ -18,7 +18,7 @@ import AboutPage from './components/about/AboutPage.js';
 import AdminPage from './components/admin/AdminPage.js';
 import { apiUrl } from './constants.js';
 
-console.log('main.js');
+console.log('app.js');
 
 function isAdmin() {
 	return rp({
