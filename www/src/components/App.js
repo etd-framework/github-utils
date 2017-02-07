@@ -11,11 +11,13 @@ import '../scss/app.scss';
  * This is the parent component for all routes in the application. It displays
  * the header and wraps the content of the current route in a container div.
  */
-let App = React.createClass({
-	componentDidMount: function() {
+class App extends React.Component {
+
+	componentDidMount() {
 		console.log('App.js');
-	},
-	render: function() {
+	}
+
+	render() {
 		return (
 			<div className="d-table w-100 h-100">
 				<div className="d-tablecell align-middle p-2">
@@ -24,6 +26,6 @@ let App = React.createClass({
 			</div>
 		);
 	}
-});
+}
 
 export default App;

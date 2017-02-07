@@ -5,17 +5,19 @@ import React from 'react';
 /**
  * Actions Page
  */
-let ActionsPage = React.createClass({
-	componentDidMount: function() {
+class ActionsPage extends React.Component {
+
+	componentDidMount() {
 		console.log('ActionsPage.js');
-	},
-	render: function() {
+	}
+
+	render() {
 		return (
 			<div>
 				<h2>Actions</h2>
 			</div>
 		);
 	}
-});
+}
 
 export default ActionsPage;

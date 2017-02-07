@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, Redirect } from 'react-router';
 import history from './history.js';
 import App from './components/App.js';
@@ -18,7 +18,7 @@ import RunPage from './components/run/RunPage.js';
 
 console.log('app.js');
 
-render((
+ReactDOM.render((
 	<Router history={history}>
 		<Route path="/" component={App}>
 			<IndexRoute component={LoginPage} />

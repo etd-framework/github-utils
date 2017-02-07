@@ -5,17 +5,19 @@ import React from 'react';
 /**
  * Run Page
  */
-let RunPage = React.createClass({
-	componentDidMount: function() {
+class RunPage extends React.Component {
+
+	componentDidMount() {
 		console.log('RunPage.js');
-	},
-	render: function() {
+	}
+
+	render() {
 		return (
 			<div>
 				<h2>Run</h2>
 			</div>
 		);
 	}
-});
+}
 
 export default RunPage;

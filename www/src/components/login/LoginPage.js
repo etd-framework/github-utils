@@ -8,11 +8,13 @@ import './LoginPage.scss';
 /**
  * Login Page
  */
-let LoginPage = React.createClass({
-	componentDidMount: function() {
+class LoginPage extends React.Component {
+
+	componentDidMount() {
 		console.log('LoginPage.js');
-	},
-	handleClick: function() {
+	}
+
+	handleClick() {
 		rp({
 			uri: apiUrl,
 			json: true,
@@ -24,8 +26,9 @@ let LoginPage = React.createClass({
 		.catch(function(error) {
 			console.log(error);
 		});
-	},
-	render: function() {
+	}
+
+	render() {
 		return (
 			<div className="login">
 				<div className="cell mx-auto">
@@ -41,6 +44,7 @@ let LoginPage = React.createClass({
 			</div>
 		);
 	}
-});
+
+}
 
 export default LoginPage;
