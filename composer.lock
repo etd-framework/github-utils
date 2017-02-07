@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/etd-framework/form.git",
-                "reference": "9b07b6c36adc4717225553b8af372c2e9d4c5bc3"
+                "reference": "51e062f2a3a72fe11d735fd8c5473bb2b57d2745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etd-framework/form/zipball/9b07b6c36adc4717225553b8af372c2e9d4c5bc3",
-                "reference": "9b07b6c36adc4717225553b8af372c2e9d4c5bc3",
+                "url": "https://api.github.com/repos/etd-framework/form/zipball/51e062f2a3a72fe11d735fd8c5473bb2b57d2745",
+                "reference": "51e062f2a3a72fe11d735fd8c5473bb2b57d2745",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +336,7 @@
             ],
             "description": "Package Form du Framework ETD",
             "homepage": "https://github.com/etd-framework/form",
-            "time": "2016-12-27 16:29:03"
+            "time": "2017-02-03 14:34:30"
         },
         {
             "name": "etdsolutions/language",
@@ -813,12 +813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/data.git",
-                "reference": "08f47aea7735b4c78074119db3d52cda9d37f413"
+                "reference": "580e601efaf8cc2141043a2167d571d4c6f21255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/data/zipball/08f47aea7735b4c78074119db3d52cda9d37f413",
-                "reference": "08f47aea7735b4c78074119db3d52cda9d37f413",
+                "url": "https://api.github.com/repos/joomla-framework/data/zipball/580e601efaf8cc2141043a2167d571d4c6f21255",
+                "reference": "580e601efaf8cc2141043a2167d571d4c6f21255",
                 "shasum": ""
             },
             "require": {
@@ -853,7 +853,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2016-12-18 15:15:18"
+            "time": "2017-01-15 23:11:20"
         },
         {
             "name": "joomla/database",
@@ -861,12 +861,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/database.git",
-                "reference": "f66aff6622aa00379dab85128076c5eb076b2728"
+                "reference": "af9d74750f2dc0ef1d94c331093c1195358cc242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/database/zipball/f66aff6622aa00379dab85128076c5eb076b2728",
-                "reference": "f66aff6622aa00379dab85128076c5eb076b2728",
+                "url": "https://api.github.com/repos/joomla-framework/database/zipball/af9d74750f2dc0ef1d94c331093c1195358cc242",
+                "reference": "af9d74750f2dc0ef1d94c331093c1195358cc242",
                 "shasum": ""
             },
             "require": {
@@ -886,7 +886,8 @@
                 "ext-pdo": "To connect to a MySQL, Oracle, PostgreSQL, or SQLite database via PDO",
                 "ext-pgsql": "To connect to a PostgreSQL database",
                 "ext-sqlsrv": "To connect to a SQL Server database",
-                "joomla/di": "To use the Database ServiceProviderInterface objects, install joomla/di."
+                "joomla/di": "To use the Database ServiceProviderInterface objects, install joomla/di.",
+                "joomla/registry": "To use the Database ServiceProviderInterface objects, install joomla/registry."
             },
             "type": "joomla-package",
             "extra": {
@@ -910,7 +911,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2016-12-18 15:24:08"
+            "time": "2017-01-29 17:44:45"
         },
         {
             "name": "joomla/date",
@@ -1012,12 +1013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/filesystem.git",
-                "reference": "6e2840a82a3958cf8f23ae869e2292d812cfa5d3"
+                "reference": "0926d0a8757c89087be7a10b062d46f4d18597f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/filesystem/zipball/6e2840a82a3958cf8f23ae869e2292d812cfa5d3",
-                "reference": "6e2840a82a3958cf8f23ae869e2292d812cfa5d3",
+                "url": "https://api.github.com/repos/joomla-framework/filesystem/zipball/0926d0a8757c89087be7a10b062d46f4d18597f8",
+                "reference": "0926d0a8757c89087be7a10b062d46f4d18597f8",
                 "shasum": ""
             },
             "require": {
@@ -1053,7 +1054,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2016-12-10 17:45:15"
+            "time": "2017-02-04 17:06:13"
         },
         {
             "name": "joomla/filter",
@@ -1268,12 +1269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/model.git",
-                "reference": "51def1c6695abb1457f63fa0a28e038bc0eb6cb5"
+                "reference": "f59b6cccd89bbea157dd191773fa315bba63f81b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/model/zipball/51def1c6695abb1457f63fa0a28e038bc0eb6cb5",
-                "reference": "51def1c6695abb1457f63fa0a28e038bc0eb6cb5",
+                "url": "https://api.github.com/repos/joomla-framework/model/zipball/f59b6cccd89bbea157dd191773fa315bba63f81b",
+                "reference": "f59b6cccd89bbea157dd191773fa315bba63f81b",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1312,7 @@
                 "joomla",
                 "model"
             ],
-            "time": "2016-12-18 16:19:17"
+            "time": "2017-01-22 18:31:39"
         },
         {
             "name": "joomla/registry",
@@ -1483,12 +1484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/uri.git",
-                "reference": "cf15fad4640910257d94046bd9e9b5b4fc9d3113"
+                "reference": "75b20a9494de40dd586f98f7137c917a2b90fc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/cf15fad4640910257d94046bd9e9b5b4fc9d3113",
-                "reference": "cf15fad4640910257d94046bd9e9b5b4fc9d3113",
+                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/75b20a9494de40dd586f98f7137c917a2b90fc56",
+                "reference": "75b20a9494de40dd586f98f7137c917a2b90fc56",
                 "shasum": ""
             },
             "require": {
@@ -1521,7 +1522,7 @@
                 "joomla",
                 "uri"
             ],
-            "time": "2016-12-10 17:09:30"
+            "time": "2017-01-23 13:16:16"
         },
         {
             "name": "joomla/utilities",
@@ -1529,12 +1530,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/utilities.git",
-                "reference": "3ce748eb01bf0378fdd86624a58ecbfb09a3cb23"
+                "reference": "9e63f2e58da716d83f574231bd8e15ba4ec0e98c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/utilities/zipball/3ce748eb01bf0378fdd86624a58ecbfb09a3cb23",
-                "reference": "3ce748eb01bf0378fdd86624a58ecbfb09a3cb23",
+                "url": "https://api.github.com/repos/joomla-framework/utilities/zipball/9e63f2e58da716d83f574231bd8e15ba4ec0e98c",
+                "reference": "9e63f2e58da716d83f574231bd8e15ba4ec0e98c",
                 "shasum": ""
             },
             "require": {
@@ -1567,7 +1568,7 @@
                 "joomla",
                 "utilities"
             ],
-            "time": "2016-12-30 13:40:00"
+            "time": "2017-01-22 20:40:06"
         },
         {
             "name": "monolog/monolog",
