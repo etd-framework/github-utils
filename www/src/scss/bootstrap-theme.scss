@@ -1,0 +1,19 @@
+/*
+ * Outils GitHub by ETD Solutions
+ * Copyright 2017 ETD Solutions
+ * Licensed under Apache 2.0 (https://github.com/etd-framework/github-utils/blob/v2/LICENSE)
+ */
+
+// Bootstrap Theme
+
+.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  &::placeholder {
+    font-weight: $font-weight-bold;
+  }
+}

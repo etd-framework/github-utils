@@ -5,25 +5,8 @@
  */
 
 @import "variables";
-
-//
-// Base
-//
-
-html, body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-}
-
-body {
-  background: $body-bg url(../img/bg.jpg) no-repeat center fixed;
-  background-size: cover;
-}
-
-// App
-#etdapp {
-  position: relative;
-  width: 100%;
-}
+@import "bootstrap";
+@import "utilities/display";
+@import "utilities/text";
+@import "bootstrap-theme";
+@import "base";

@@ -7,10 +7,6 @@ import React from 'react';
  */
 class RunPage extends React.Component {
 
-	componentDidMount() {
-		console.log('RunPage.js');
-	}
-
 	render() {
 		return (
 			<div>

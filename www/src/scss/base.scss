@@ -1,0 +1,43 @@
+/*
+ * Outils GitHub by ETD Solutions
+ * Copyright 2017 ETD Solutions
+ * Licensed under Apache 2.0 (https://github.com/etd-framework/github-utils/blob/v2/LICENSE)
+ */
+
+//
+// Base
+//
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+body {
+  background: $body-bg url(../img/bg.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+// App
+#etdapp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// Box
+.cell {
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0 , .3) ;
+
+  h1 {
+    text-align: center;
+    margin: 1.875rem 0 2.5rem;
+  }
+
+
+}

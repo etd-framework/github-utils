@@ -16,6 +16,11 @@ module.exports = {
     devtool: 'source-map',
     plugins: [
 
+        // set node env
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('development')
+        }),
+
 		// output a separate css bundle
 		new ExtractTextPlugin('app.css', {
             allChunks: true
@@ -28,12 +33,8 @@ module.exports = {
 			tunnel: true,
 			// watch the built files and the index file
 			files: ['www/build/*', 'www/index.html']
-		}),
-
-		// set node env
-		new webpack.DefinePlugin({
-			'process.env.NODE_ENV': JSON.stringify('development')
 		})
+
 	], 
 	module: {
 		loaders: [

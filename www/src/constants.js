@@ -5,4 +5,4 @@
  */
 
 // uri for API calls
-export var apiUrl = window.location.origin + '/api/api.php';
+export const API_ROOT = (process.env.NODE_ENV === 'development') ? 'https://api.github' : window.location.origin + '/api';

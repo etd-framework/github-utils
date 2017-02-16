@@ -7,10 +7,6 @@ import React from 'react';
  */
 class ActionsPage extends React.Component {
 
-	componentDidMount() {
-		console.log('ActionsPage.js');
-	}
-
 	render() {
 		return (
 			<div>

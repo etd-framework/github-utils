@@ -28,16 +28,18 @@ try {
     $container = (new \Joomla\DI\Container)
         ->registerServiceProvider(new EtdSolutions\Service\ConfigurationProvider(JPATH_ROOT . '/etc/config.json'))
 	    ->registerServiceProvider(new EtdSolutions\Service\LanguageFactoryProvider)
-        ->registerServiceProvider(new EtdSolutions\Service\DatabaseProvider)
-        ->registerServiceProvider(new EtdSolutions\Service\SessionProvider)
-        ->registerServiceProvider(new EtdSolutions\Service\UserProvider);
+        ->registerServiceProvider(new EtdSolutions\Service\DatabaseProvider);
 
     // On définit le rapport d'erreur en fonction de la config
     $errorReporting = (int) $container->get('config')->get('error_reporting', 0);
     $errorLog       = $container->get('config')->get('error_log', null);
     error_reporting($errorReporting);
 
-    @ini_set('display_errors', '1');
+    if ($container->get('config')->get('debug', false)) {
+        @ini_set('display_errors', '1');
+    } else {
+        @ini_set('display_errors', '0');
+    }
 
     if (isset($errorLog)) {
         @ini_set('error_log', JPATH_LOGS . "/" . $errorLog);
@@ -51,6 +53,25 @@ try {
 }
 
 // On exécute l'application.
-(new EtdSolutions\EtdGithubUtils\Application\Api(null, $container->get('config')))
-    ->setContainer($container)
-    ->execute();
+try {
+    (new EtdSolutions\EtdGithubUtils\Application\Api(null, $container->get('config')))
+        ->setContainer($container)
+        ->execute();
+} catch (\Exception $e) {
+    header('Content-Type: application/json; charset=utf-8');
+    if ($container->get('config')->get('debug')) {
+        header('Status: 500 Internal Server Error');
+        $ret = [
+            "message" => $e->getMessage(),
+            "backtrace" => $e->getTrace(),
+            "exception" => $e
+        ];
+    } else {
+        header('Status: 404 Not Found');
+        $ret = [
+            "message" => "Not Found"
+        ];
+    }
+    echo json_encode($ret, JSON_PRETTY_PRINT + JSON_UNESCAPED_SLASHES);
+    die;
+}
