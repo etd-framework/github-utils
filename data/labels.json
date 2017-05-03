@@ -2,6 +2,9 @@
   "framework": "BFD4F2",
   "app": "BFD4F2",
   "site": "BFD4F2",
+  "administratif": "BFD4F2",
+  "serveur": "BFD4F2",
+  "tech": "BFD4F2",
   "bug": "EE3F46",
   "sécurité": "EE3F46",
   "prod": "F45D43",
@@ -24,5 +27,6 @@
   "doublon": "D2DAE1",
   "en attente": "D2DAE1",
   "boum": "FFFF00",
-  "45mins": "FFFF00"
+  "45mins": "FFFF00",
+  "Epic": "3E4B9E"
 }

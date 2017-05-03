@@ -3,10 +3,11 @@
 // Composer's autoloader
 require_once __DIR__ . '/vendor/autoload.php';
 
-$input = new \Joomla\Input\Input();
-$token = $input->get('token', '', 'string');
-$owner = $input->get('owner', '', 'string');
-$repo  = $input->get('repo', '', 'string');
+$input  = new \Joomla\Input\Input();
+$token  = $input->get('token', '', 'string');
+$owner  = $input->get('owner', '', 'string');
+$repo   = $input->get('repo', '', 'string');
+$issues = $input->get('issues', false, 'bool');
 
 if (empty($token) || empty($owner) || empty($repo)) {
     die('invalid params');
@@ -98,5 +99,29 @@ try {
     echo "PULL_REQUEST_TEMPLATE créé.<br>";
 
 } catch (\Exception $e) {
-    die($e->getCode() . " : " . $e->getMessage());
+    echo($e->getCode() . " : " . $e->getMessage());
+}
+
+if ($issues) {
+
+    echo "<hr>";
+    echo "<h1>Issues</h1>";
+
+    $issues = json_decode(file_get_contents(__DIR__."/data/issues.json"));
+
+    foreach ($issues AS $issue) {
+
+        try {
+
+            // On crée l'issue.
+            $github->issues->create($owner, $repo, $issue->title, $issue->body, null, null, $issue->labels, null);
+
+        } catch (\Exception $e) {
+            die($e->getCode() . " : " . $e->getMessage());
+        }
+
+    }
+
+    echo count($issues) . " issues créées.";
+
 }
