@@ -20,57 +20,7 @@ $options->set('gh.token', $token);
 $github = new \Joomla\Github\Github($options);
 
 // Labels
-$labels = [
-
-    // Plateforme
-    "framework" => "BFD4F2",
-    "app"       => "BFD4F2",
-    "site"      => "BFD4F2",
-
-    // Problèmes
-    "bug"      => "EE3F46",
-    "sécurité" => "EE3F46",
-    "prod"     => "F45D43",
-
-    // Ennuyeux
-    "corvée"  => "FEF2C0",
-    "contenu" => "FFF2C1",
-
-    // Expérience
-    "design" => "FFC274",
-    "ux"     => "FFC274",
-
-    // Environnement
-    "staging" => "FAD8C7",
-    "tests"   => "FAD8C7",
-
-    // Feedback
-    "discussion"  => "CC317C",
-    "question"    => "CC317C",
-    "besoin aide" => "CC317C",
-
-    // Améliorations
-    "amélioration" => "5EBEFF",
-    "optimisation" => "5EBEFF",
-
-    // Ajouts
-    "fonction" => "91CA55",
-
-    // En attente
-    "en cours"     => "FBCA04",
-    "a surveiller" => "FBCA04",
-
-    // Inactive
-    "invalide"   => "D2DAE1",
-    "wontfix"    => "D2DAE1",
-    "doublon"    => "D2DAE1",
-    "en attente" => "D2DAE1",
-
-    // Fixes rapides
-    "boum"   => "FFFF00",
-    "45mins" => "FFFF00"
-    
-];
+$labels = json_decode(file_get_contents(__DIR__."/data/labels.json"));
 
 echo "Owner : " . $owner . " | Repo : " . $repo;
 echo "<hr>";
