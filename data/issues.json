@@ -45,11 +45,6 @@
     "labels": ["tech", "corvée", "site"]
   },
   {
-    "title": "Ajouter le plugin ETDEUCookies",
-    "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
-    "labels": ["boum", "corvée", "site"]
-  },
-  {
     "title": "Mettre en place le composant OSMap",
     "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
     "labels": ["boum", "corvée", "site"]
