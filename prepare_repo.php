@@ -70,6 +70,7 @@ if (!$uri->isSSL()) {
         <input type="password" name="token" value="" placeholder="token">
         <input type="text" name="owner" value="jbanety" placeholder="owner">
         <input type="text" name="repo" value="" placeholder="repo">
+        <label for="issues"><input type="checkbox" id="issues" name="issues" value="1" checked> Créer issues</label>
         <button type="submit">boum!</button>
     </fieldset>
 

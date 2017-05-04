@@ -114,7 +114,7 @@ if ($issues) {
         try {
 
             // On crée l'issue.
-            $github->issues->create($owner, $repo, $issue->title, $issue->body, null, null, $issue->labels, null);
+            $github->issues->create($owner, $repo, $issue->title, $issue->body, null, null, $issue->labels, []);
 
         } catch (\Exception $e) {
             die($e->getCode() . " : " . $e->getMessage());
