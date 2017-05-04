@@ -35,11 +35,6 @@
     "labels": ["45mins", "corvée", "site"]
   },
   {
-    "title": "Installation et configuration de Joomla!",
-    "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Ajouter les logins/mdp à Keepass",
-    "labels": ["45mins", "corvée", "site"]
-  },
-  {
     "title": "Initialiser le template Joomla!",
     "body": "## Description\nCréer le template dans le dossier `templates`.\nFichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
     "labels": ["tech", "design", "site"]
