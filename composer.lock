@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc2c2739fa47ddcfd0af30ca8dff62b6",
+    "content-hash": "b9a7761bea96f61ef441071ea0214816",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -64,6 +64,49 @@
                 "tls"
             ],
             "time": "2017-03-06T11:59:08+00:00"
+        },
+        {
+            "name": "etdsolutions/zenhub",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/etd-framework/zenhub-api.git",
+                "reference": "47891a8fb928970ac8730d6f5aa0dd735d75d35c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/etd-framework/zenhub-api/zipball/47891a8fb928970ac8730d6f5aa0dd735d75d35c",
+                "reference": "47891a8fb928970ac8730d6f5aa0dd735d75d35c",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/http": "^1.2.2|~2.0",
+                "joomla/registry": "^1.4.5|~2.0",
+                "joomla/uri": "~1.0|~2.0",
+                "joomla/utilities": "~1.0|~2.0",
+                "php": "^5.5.9|~7.0"
+            },
+            "type": "etd-package",
+            "autoload": {
+                "psr-4": {
+                    "EtdSolutions\\Zenhub\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-Baptiste Alleaume",
+                    "email": "jb.alleaume@etd-solutions.com",
+                    "homepage": "http://alleau.me",
+                    "role": "Manager"
+                }
+            ],
+            "description": "Package ZenHub du Framework ETD",
+            "homepage": "https://github.com/etd-framework/zenhub",
+            "time": "2017-05-05T16:26:20+00:00"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -200,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbanety/github-api.git",
-                "reference": "120252629e55dc1e1c213d6f1b5d30cef7535d62"
+                "reference": "e0b1339cc69b350696a4f88fc852485584511657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbanety/github-api/zipball/120252629e55dc1e1c213d6f1b5d30cef7535d62",
-                "reference": "120252629e55dc1e1c213d6f1b5d30cef7535d62",
+                "url": "https://api.github.com/repos/jbanety/github-api/zipball/e0b1339cc69b350696a4f88fc852485584511657",
+                "reference": "e0b1339cc69b350696a4f88fc852485584511657",
                 "shasum": ""
             },
             "require": {
@@ -247,7 +290,7 @@
             "support": {
                 "source": "https://github.com/jbanety/github-api/tree/patch-1"
             },
-            "time": "2017-05-04 13:49:55"
+            "time": "2017-05-09 12:41:55"
         },
         {
             "name": "joomla/http",

@@ -67,10 +67,13 @@ if (!$uri->isSSL()) {
 
     <fieldset>
         <legend>Connexion</legend>
-        <input type="password" name="token" value="" placeholder="token">
-        <input type="text" name="owner" value="jbanety" placeholder="owner">
-        <input type="text" name="repo" value="" placeholder="repo">
-        <label for="issues"><input type="checkbox" id="issues" name="issues" value="1" checked> Créer issues</label>
+        <input type="password" name="github_token" value="" placeholder="GitHub token">
+        <input type="text" name="github_owner" value="jbanety" placeholder="owner">
+        <input type="text" name="github_repo" value="" placeholder="repo">
+        <input type="password" name="zenhub_token" value="" placeholder="ZenHub token"><br>
+        <label for="create_labels"><input type="checkbox" id="create_labels" name="create_labels" value="1" checked> Créer labels</label>
+        <label for="create_templates"><input type="checkbox" id="create_templates" name="create_templates" value="1" checked> Créer templates</label>
+        <label for="create_issues"><input type="checkbox" id="create_issues" name="create_issues" value="1" checked> Créer issues</label><br>
         <button type="submit">boum!</button>
     </fieldset>
 

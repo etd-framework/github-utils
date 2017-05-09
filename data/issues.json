@@ -2,22 +2,26 @@
   {
     "title": "Contrat d'hébergement",
     "body": "",
-    "labels": ["administratif", "corvée"]
+    "labels": ["administratif", "corvée"],
+    "estimate": 1
   },
   {
     "title": "Acheter/Transférer le nom de domaine",
     "body": "## Description\nAcheter le nom de domaine sur OVH : https://www.ovh.com/fr/order/domain",
-    "labels": ["administratif", "corvée", "boum"]
+    "labels": ["administratif", "corvée", "boum"],
+    "estimate": 1
   },
   {
     "title": "Création d'un espace web sur serveur mutu",
     "body": "## Sous-tâches\n- [ ] Créer l'espace web\n - [ ] Ajouter les logins/mdp à Keepass",
-    "labels": ["corvée", "boum", "tech", "serveur"]
+    "labels": ["corvée", "boum", "tech", "serveur"],
+    "estimate": 1
   },
   {
     "title": "Modifier les zones DNS sur OVH",
     "body": "## Description\nMettre une zone minimale avec redirection email OVH et adresse IP du mutu : 212.83.180.172.\nhttps://www.ovh.com/manager/web\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH",
-    "labels": ["tech", "corvée", "boum"]
+    "labels": ["tech", "corvée", "boum"],
+    "estimate": 1
   },
   {
     "title": "Maquette graphique",
@@ -25,73 +29,86 @@
     "labels": ["design", "Epic", "site"]
   },
   {
-    "title": "Protoype HTML",
+    "title": "Prototype HTML",
     "body": "## Description\nPrototypage de la maquette en HTML5/CSS3",
     "labels": ["design", "Epic", "site"]
   },
   {
     "title": "Installation et configuration de Joomla!",
     "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Ajouter les logins/mdp à Keepass",
-    "labels": ["45mins", "corvée", "site"]
+    "labels": ["45mins", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Initialiser le template Joomla!",
     "body": "## Description\nCréer le template dans le dossier `templates`.\n - [ ] Fichier `templateDetails.xml` de base sur [Gist](https://gist.githubusercontent.com/jbanety/85606cdf8cc014748521e4b6cf01c670/raw/templateDetails.xml)\n - [ ] Fichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
-    "labels": ["tech", "design", "site"]
+    "labels": ["tech", "design", "site"],
+    "estimate": 1
   },
   {
     "title": "Optimisation Référencement SEO",
     "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
-    "labels": ["tech", "corvée", "site"]
+    "labels": ["tech", "corvée", "site"],
+    "estimate": 2
   },
   {
     "title": "Mettre en place le composant OSMap",
     "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
-    "labels": ["boum", "corvée", "site"]
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Créer la page offline",
     "body": "## Description\nSi jamais on veut mettre le site hors-ligne, créer la vue \"offline\" associée au template",
-    "labels": ["design", "site"]
+    "labels": ["design", "site"],
+    "estimate": 1
   },
   {
     "title": "Installer le plugin etdeucookie",
     "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)",
-    "labels": ["boum", "corvée", "site"]
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Ajouter les mentions légales",
     "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
-    "labels": ["contenu", "corvée", "site"]
+    "labels": ["contenu", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Optimiser la conf Apache",
     "body": "## Description\nOn optimise la configuration du serveur pour améliorer les temps de réponse, sécuriser les accès aux scripts, et le SEO.\n`.htaccess chez` [HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess)\n\n#### Optimisation SEO : un seul domaine actif (www.xxxxx.fr ou xxxxx.fr pas les 2)\nVoir section `Suppressing / Forcing the `www.` at the beginning of URLs` dans le `.htaccess`\n\nNe pas oublier de mixer avec le .htaccess de Joomla pour l'URL Rewriting.",
-    "labels": ["boum", "optimisation", "site"]
+    "labels": ["boum", "optimisation", "site"],
+    "estimate": 1
   },
   {
     "title": "Créer le \"faux\" sitemap.xml",
     "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
-    "labels": ["boum", "corvée", "site"]
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Enregistrer le site sur Google Webmaster Tools",
     "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools/\nFichier pour confirmer la propriété : googledbd823a99be2ad9e.html",
-    "labels": ["boum", "corvée", "tech"]
+    "labels": ["boum", "corvée", "tech"],
+    "estimate": 1
   },
   {
     "title": "Soumettre le sitemap sur Google Webmaster Tools",
     "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n## Prérequis\n - [ ] sitemap opérationnel",
-    "labels": ["boum", "corvée", "tech"]
+    "labels": ["boum", "corvée", "tech"],
+    "estimate": 1
   },
   {
     "title": "Créer un code Google Analytics",
     "body": "## Description\nhttps://analytics.google.com/analytics/web",
-    "labels": ["boum", "corvée", "site"]
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   },
   {
     "title": "Code Google Analytics dans le template",
     "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n## Prérequis\n - [ ] code GA créé",
-    "labels": ["boum", "corvée", "site"]
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   }
 ]
