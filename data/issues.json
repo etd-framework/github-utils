@@ -36,7 +36,7 @@
   },
   {
     "title": "Initialiser le template Joomla!",
-    "body": "## Description\nCréer le template dans le dossier `templates`.\nFichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
+    "body": "## Description\nCréer le template dans le dossier `templates`.\n - [ ] Fichier `templateDetails.xml` de base sur [Gist](https://gist.githubusercontent.com/jbanety/85606cdf8cc014748521e4b6cf01c670/raw/templateDetails.xml)\n - [ ] Fichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
     "labels": ["tech", "design", "site"]
   },
   {
