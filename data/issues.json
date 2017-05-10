@@ -59,7 +59,13 @@
   },
   {
     "title": "Créer la page offline",
-    "body": "## Description\nSi jamais on veut mettre le site hors-ligne, créer la vue \"offline\" associée au template",
+    "body": "## Description\nSi jamais on veut mettre le site hors-ligne, créer la vue \"offline\" associée au template dans offline.php",
+    "labels": ["design", "site"],
+    "estimate": 1
+  },
+  {
+    "title": "Créer la page error",
+    "body": "## Description\nSi jamais une erreur se produit, créer la vue \"error\" associée au template dans error.php",
     "labels": ["design", "site"],
     "estimate": 1
   },
