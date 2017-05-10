@@ -122,5 +122,11 @@
     "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
+  },
+  {
+    "title": "Mettre à jour les couleurs du message des cookies",
+    "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   }
 ]
