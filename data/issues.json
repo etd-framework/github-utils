@@ -110,5 +110,11 @@
     "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n## Prérequis\n - [ ] code GA créé",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
+  },
+  {
+    "title": "Changer les microdata dans l'index.php du template",
+    "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
   }
 ]
