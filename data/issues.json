@@ -76,6 +76,12 @@
     "estimate": 1
   },
   {
+    "title": "Installer le plugin etdoptimizer",
+    "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`",
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
+  },
+  {
     "title": "Ajouter les mentions légales",
     "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
     "labels": ["contenu", "corvée", "site"],
