@@ -107,7 +107,7 @@
   },
   {
     "title": "Soumettre le sitemap sur Google Webmaster Tools",
-    "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n## Prérequis\n - [ ] sitemap opérationnel",
+    "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n\n## Prérequis\n - [ ] sitemap opérationnel",
     "labels": ["boum", "corvée", "tech"],
     "estimate": 1
   },
@@ -119,19 +119,31 @@
   },
   {
     "title": "Code Google Analytics dans le template",
-    "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n## Prérequis\n - [ ] code GA créé",
+    "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n\n## Prérequis\n - [ ] code GA créé",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
   },
   {
     "title": "Changer les microdata dans l'index.php du template",
-    "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
+    "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
   },
   {
     "title": "Mettre à jour les couleurs du message des cookies",
-    "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
+    "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
+  },
+  {
+    "title": "Mettre à jour les informations des mentions légales",
+    "body": "## Description\nMettre à jour les informations des mentions légales correspondent à celles du site.\n\n## Prérequis\n - [ ] Nom de l'entreprise/institution\n - [ ] Coordonnées de l'entreprise/institution\n - [ ] Nom de domaine du site web de l'entreprise/institution",
+    "labels": ["boum", "corvée", "site"],
+    "estimate": 1
+  },
+  {
+    "title": "Mettre à jour le lien du site pour le sitemap",
+    "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
   }
