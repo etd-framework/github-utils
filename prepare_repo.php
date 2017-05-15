@@ -51,31 +51,61 @@ if (!$uri->isSSL()) {
 
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Création des labels</title>
+    <title>Préparation d'un repo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html,body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+        body{background: #fff url(bg.jpg) no-repeat center fixed;background-size: cover}
+    </style>
 </head>
 <body>
 
-<form action="/do_prepare.php" method="post">
-
-    <fieldset>
-        <legend>Connexion</legend>
-        <input type="password" name="github_token" value="" placeholder="GitHub token">
-        <input type="text" name="github_owner" value="jbanety" placeholder="owner">
-        <input type="text" name="github_repo" value="" placeholder="repo">
-        <input type="password" name="zenhub_token" value="" placeholder="ZenHub token"><br>
-        <label for="create_labels"><input type="checkbox" id="create_labels" name="create_labels" value="1" checked> Créer labels</label>
-        <label for="create_templates"><input type="checkbox" id="create_templates" name="create_templates" value="1" checked> Créer templates</label>
-        <label for="create_issues"><input type="checkbox" id="create_issues" name="create_issues" value="1" checked> Créer issues</label><br>
-        <button type="submit">boum!</button>
-    </fieldset>
+<form action="/do_prepare.php" method="post" class="panel panel-default" style="width:400px;margin:80px auto" onsubmit="document.getElementById('submit').disabled=true;document.getElementById('submit').innerHTML='en cours...'">
+    <div class="panel-heading">
+        <h3 class="panel-title">Préparation d'un repo</h3>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="github_token">Token GitHub</label>
+            <input type="password" name="github_token" value="" class="form-control" id="github_token" required>
+        </div>
+        <div class="form-group">
+            <label for="github_owner">Owner</label>
+            <input type="text" name="github_owner" value="jbanety" class="form-control" id="github_owner" required>
+        </div>
+        <div class="form-group">
+            <label for="github_repo">Repo</label>
+            <input type="text" name="github_repo" value="" class="form-control" id="github_repo" required>
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="create_labels" value="1" autocomplete="off" checked> Créer les labels
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="create_templates" value="1" autocomplete="off" checked> Créer les templates
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="create_issues" value="1" autocomplete="off" checked onchange="document.getElementById('zenhub').style.display=(this.checked)?'block':'none'"> Créer les issues
+                </label>
+            </div>
+        </div>
+        <div class="form-group" id="zenhub">
+            <label for="github_token">Token ZenHub</label>
+            <input type="password" name="zenhub_token" value="" class="form-control" id="zenhub_token">
+        </div>
+        <button id="submit" type="submit" class="btn btn-lg btn-success btn-block" autocomplete="off">boum !</button>
+    </div>
 
 </form>
 

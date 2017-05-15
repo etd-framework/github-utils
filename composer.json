@@ -31,9 +31,18 @@
     "joomla/input": "2.0.*@dev",
     "joomla/github": "dev-patch-1@dev",
     "opnmind/php-svg": "dev-master@dev",
-    "etdsolutions/zenhub": "~1.0"
+    "etdsolutions/zenhub": "~1.0",
+    "twbs/bootstrap": "~3.3"
   },
   "autoload": {
     "classmap": ["src/"]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp -f vendor/twbs/bootstrap/dist/css/bootstrap.min.css css/bootstrap.min.css"
+    ],
+    "post-update-cmd": [
+      "cp -f vendor/twbs/bootstrap/dist/css/bootstrap.min.css css/bootstrap.min.css"
+    ]
   }
 }

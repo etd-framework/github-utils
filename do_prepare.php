@@ -149,6 +149,7 @@ if ($create_issues) {
         try {
 
             // On crée l'issue.
+
             $gh_issue = $github->issues->create($github_owner, $github_repo, $issue->title, $issue->body, null, null, $issue->labels, []);
 
             // On lui donne les infos du Board
