@@ -2,10 +2,10 @@
 
 En tant que *rôle*, je veux *tâche* afin de *objectif*.
 
-## Critères d'acceptation
+## Pré-requis
 
-- [ ] 
-- [ ] 
+- [ ] issue #999
 
-## Définition de "Done"
+## Sous-tâches
 
+- [ ] issue #999
