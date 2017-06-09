@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/github-api.git",
-                "reference": "3c4914570f96ad3ffb81f8729b9a48d0068a9beb"
+                "reference": "3d026ee1a7dea6692de1ff8f5ab81d5eb9222623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/github-api/zipball/3c4914570f96ad3ffb81f8729b9a48d0068a9beb",
-                "reference": "3c4914570f96ad3ffb81f8729b9a48d0068a9beb",
+                "url": "https://api.github.com/repos/joomla-framework/github-api/zipball/3d026ee1a7dea6692de1ff8f5ab81d5eb9222623",
+                "reference": "3d026ee1a7dea6692de1ff8f5ab81d5eb9222623",
                 "shasum": ""
             },
             "require": {
@@ -283,7 +283,7 @@
                 "github",
                 "joomla"
             ],
-            "time": "2017-02-19 23:31:35"
+            "time": "2017-05-27 01:14:50"
         },
         {
             "name": "joomla/http",
@@ -343,12 +343,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/input.git",
-                "reference": "bf26824558c7e0a0be9ea6515078d1b320125b8c"
+                "reference": "1f9ce232d99a376c1c1dc77f7ef93cab8dd5f190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/input/zipball/bf26824558c7e0a0be9ea6515078d1b320125b8c",
-                "reference": "bf26824558c7e0a0be9ea6515078d1b320125b8c",
+                "url": "https://api.github.com/repos/joomla-framework/input/zipball/1f9ce232d99a376c1c1dc77f7ef93cab8dd5f190",
+                "reference": "1f9ce232d99a376c1c1dc77f7ef93cab8dd5f190",
                 "shasum": ""
             },
             "require": {
@@ -381,7 +381,7 @@
                 "input",
                 "joomla"
             ],
-            "time": "2017-02-19 23:52:29"
+            "time": "2017-05-27 01:15:52"
         },
         {
             "name": "joomla/registry",
