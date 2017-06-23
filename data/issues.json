@@ -146,5 +146,11 @@
     "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
     "labels": ["boum", "corvée", "site"],
     "estimate": 1
+  },
+  {
+    "title": "Installation et configuration Grunt",
+    "body": "## Description\nInstallation et configuration Grunt.\n- [ ] Fichier `package.json` de base sur [Gist](https://gist.github.com/klawuy/21c4bad1a64a486467eeccdc8f3d1d70)\n- [ ] Executer la commande yarn dans le template\n- [ ] Fichier `Grunfile.js` de base sur [Gist](https://gist.github.com/klawuy/7174406227e9db3ba5bdca5af7d21d90)\n- [ ] Executer la commande grunt sync dans le template\n- [ ] Executer la commande grunt dans le template",
+    "labels": ["45mins", "corvée", "site"],
+    "estimate": 1
   }
 ]
