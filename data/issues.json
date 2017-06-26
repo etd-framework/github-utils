@@ -35,7 +35,7 @@
   },
   {
     "title": "Installation et configuration de Joomla!",
-    "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Configurer Joomla! (URL Rewriting, ...)\n - [ ] Ajouter les logins/mdp à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess`" ,
+    "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Configurer Joomla! (URL Rewriting, ...)\n - [ ] Ajouter les logins/mdp à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess` " ,
     "labels": ["45mins", "corvée", "site"],
     "estimate": 1
   },
