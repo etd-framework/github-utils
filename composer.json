@@ -35,9 +35,11 @@
   },
   "scripts": {
     "post-install-cmd": [
+      "mkdir -p css",
       "cp -f vendor/twbs/bootstrap/dist/css/bootstrap.min.css css/bootstrap.min.css"
     ],
     "post-update-cmd": [
+      "mkdir -p css",
       "cp -f vendor/twbs/bootstrap/dist/css/bootstrap.min.css css/bootstrap.min.css"
     ]
   }
