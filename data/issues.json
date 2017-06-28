@@ -54,13 +54,13 @@
   {
     "title": "Optimisation Référencement SEO",
     "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
-    "labels": ["tech", "corvée", "site"],
+    "labels": ["tech", "corvée", "site", "seo"],
     "estimate": 2
   },
   {
     "title": "Mettre en place le composant OSMap",
     "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
-    "labels": ["boum", "corvée", "site"],
+    "labels": ["boum", "corvée", "site", "seo"],
     "estimate": 1
   },
   {
@@ -102,19 +102,19 @@
   {
     "title": "Créer le \"faux\" sitemap.xml",
     "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
-    "labels": ["boum", "corvée", "site"],
+    "labels": ["boum", "corvée", "site", "seo"],
     "estimate": 1
   },
   {
     "title": "Enregistrer le site sur Google Webmaster Tools",
     "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools/\nFichier pour confirmer la propriété : googledbd823a99be2ad9e.html",
-    "labels": ["boum", "corvée", "tech"],
+    "labels": ["boum", "corvée", "tech", "seo"],
     "estimate": 1
   },
   {
     "title": "Soumettre le sitemap sur Google Webmaster Tools",
     "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n\n## Prérequis\n - [ ] sitemap opérationnel",
-    "labels": ["boum", "corvée", "tech"],
+    "labels": ["boum", "corvée", "tech", "seo"],
     "estimate": 1
   },
   {
@@ -126,13 +126,13 @@
   {
     "title": "Code Google Analytics dans le template",
     "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n\n## Prérequis\n - [ ] code GA créé",
-    "labels": ["boum", "corvée", "site"],
+    "labels": ["boum", "corvée", "site", "seo"],
     "estimate": 1
   },
   {
     "title": "Changer les microdata dans l'index.php du template",
     "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
-    "labels": ["boum", "corvée", "site"],
+    "labels": ["boum", "corvée", "site", "seo"],
     "estimate": 1
   },
   {
@@ -150,7 +150,7 @@
   {
     "title": "Mettre à jour le lien du site pour le sitemap",
     "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
-    "labels": ["boum", "corvée", "site"],
+    "labels": ["boum", "corvée", "site", "seo"],
     "estimate": 1
   }
 ]
