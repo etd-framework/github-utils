@@ -14,6 +14,7 @@ $zenhub_token  = $input->get('zenhub_token', '', 'string');
 $create_issues = $input->get('create_issues', false, 'bool');
 $create_labels = $input->get('create_labels', false, 'bool');
 $create_tmpl   = $input->get('create_templates', false, 'bool');
+$project_type  = $input->get('project_type', '', 'cmd');
 
 if (empty($github_token) || empty($github_owner) || empty($github_repo)) {
     die('invalid params');
@@ -144,12 +145,17 @@ if ($create_issues) {
 
     }
 
-    foreach ($issues AS $issue) {
+    if (!isset($issues->$project_type) || empty($issues->$project_type)) {
+        die("Invalid project type");
+    }
+
+    $epics = [];
+
+    foreach ($issues->$project_type AS $issue) {
 
         try {
 
             // On crée l'issue.
-
             $gh_issue = $github->issues->create($github_owner, $github_repo, $issue->title, $issue->body, null, null, $issue->labels, []);
 
             // On lui donne les infos du Board
@@ -164,14 +170,64 @@ if ($create_issues) {
                 $zenhub->issues->moves($gh_repo->id, $gh_issue->number, $zh_board->pipelines[2]->id, 'bottom');
 
                 // Epic
-                if (in_array("Epic", $issue->labels)) {
-                    $zenhub->issues->convertToEpic($gh_repo->id, $gh_issue->number);
+                if (isset($issue->isEpic) && $issue->isEpic === true) {
+
+                    // On crée un objet pour stocker les futures issues liées à cette Epic.
+                    $epics[$issue->epicId] = [
+                        "issueId"    => $gh_issue->number,
+                        "add_issues" => []
+                    ];
+
+                } elseif (isset($issue->epicId)) { // L'issue est dans une Epic.
+
+                    // Si l'Epic a déjà été créée.
+                    if (isset($epics[$issue->epicId])) {
+
+                        // On lie l'issue à l'Epic.
+                        $epics[$issue->epicId]["add_issues"][] = $gh_issue->number;
+
+                    }
+
                 }
 
             }
 
         } catch (\Exception $e) {
             die($e->getCode() . " : " . $e->getMessage());
+        }
+
+    }
+
+    // On traite les liens issues <> epics.
+    if (!empty($zenhub_token) && !empty($epics)) {
+
+        // On parcourt les epics.
+        foreach ($epics as $epic) {
+
+            try {
+
+                $add_issues = [];
+
+                // Si on a bien des issues pour cette Epic.
+                if (!empty($epic["add_issues"])) {
+
+                    // On ajoute les issues à l'Epic.
+                    $add_issues = array_map(function($issue_number) use ($gh_repo) {
+                        return [
+                            "repo_id"      => $gh_repo->id,
+                            "issue_number" => $issue_number
+                        ];
+                    }, $epic["add_issues"]);
+
+                }
+
+                // On convertit en Epic.
+                $zenhub->issues->convertToEpic($gh_repo->id, $epic["issueId"], $add_issues);
+
+            } catch (\Exception $e) {
+                die($e->getCode() . " : " . $e->getMessage());
+            }
+
         }
 
     }

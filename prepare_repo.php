@@ -64,7 +64,7 @@ if (!$uri->isSSL()) {
         body{background: #fff url(bg.jpg) no-repeat center fixed;background-size: cover}
     </style>
 </head>
-<body>
+<body onload="document.getElementById('submit').disabled=false;document.getElementById('submit').innerHTML='boum !'">
 
 <form action="/do_prepare.php" method="post" class="panel panel-default" style="width:400px;margin:80px auto" onsubmit="document.getElementById('submit').disabled=true;document.getElementById('submit').innerHTML='en cours...'">
     <div class="panel-heading">
@@ -100,9 +100,18 @@ if (!$uri->isSSL()) {
                 </label>
             </div>
         </div>
-        <div class="form-group" id="zenhub">
-            <label for="github_token">Token ZenHub</label>
-            <input type="password" name="zenhub_token" value="" class="form-control" id="zenhub_token">
+        <div id="zenhub">
+            <div class="form-group">
+                <label for="project_type">Type de projet</label>
+                <select class="form-control" id="project_type" name="project_type">
+                    <option value="vitrine">Site vitrine</option>
+                    <option value="seo">SEO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="github_token">Token ZenHub</label>
+                <input type="password" name="zenhub_token" value="" class="form-control" id="zenhub_token">
+            </div>
         </div>
         <button id="submit" type="submit" class="btn btn-lg btn-success btn-block" autocomplete="off">boum !</button>
     </div>

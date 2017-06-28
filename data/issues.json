@@ -1,156 +1,184 @@
-[
-  {
-    "title": "Contrat d'hébergement",
-    "body": "",
-    "labels": ["administratif", "corvée"],
-    "estimate": 1
-  },
-  {
-    "title": "Acheter/Transférer le nom de domaine",
-    "body": "## Description\nAcheter le nom de domaine sur OVH : https://www.ovh.com/fr/order/domain",
-    "labels": ["administratif", "corvée", "boum"],
-    "estimate": 1
-  },
-  {
-    "title": "Création d'un espace web sur serveur mutu",
-    "body": "## Sous-tâches\n- [ ] Créer l'espace web\n - [ ] Ajouter les logins/mdp à Keepass",
-    "labels": ["corvée", "boum", "tech", "serveur"],
-    "estimate": 1
-  },
-  {
-    "title": "Modifier les zones DNS sur OVH",
-    "body": "## Description\nMettre une zone minimale avec redirection email OVH et adresse IP du mutu : 212.83.180.172.\nhttps://www.ovh.com/manager/web\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH",
-    "labels": ["tech", "corvée", "boum"],
-    "estimate": 1
-  },
-  {
-    "title": "Maquette graphique",
-    "body": "## Description\nFaire la maquette graphique des différentes pages :\n- [ ] Page d'accueil\n - [ ] ",
-    "labels": ["design", "Epic", "site"]
-  },
-  {
-    "title": "Prototype HTML",
-    "body": "## Description\nPrototypage de la maquette en HTML5/CSS3",
-    "labels": ["design", "Epic", "site"]
-  },
-  {
-    "title": "Installation et configuration de Joomla!",
-    "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Configurer Joomla! (URL Rewriting, ...)\n - [ ] Ajouter les logins/mdp à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess`" ,
-    "labels": ["45mins", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Initialiser le template Joomla!",
-    "body": "## Description\nCréer le template dans le dossier `templates`.\n - [ ] Fichier `templateDetails.xml` de base sur [Gist](https://gist.githubusercontent.com/jbanety/85606cdf8cc014748521e4b6cf01c670/raw/templateDetails.xml)\n - [ ] Fichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
-    "labels": ["tech", "design", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Installation et configuration Grunt",
-    "body": "## Description\nInstallation et configuration Grunt.\n- [ ] Fichier `package.json` de base sur [Gist](https://gist.github.com/klawuy/21c4bad1a64a486467eeccdc8f3d1d70)\n- [ ] Executer la commande `yarn install` dans le template\n- [ ] Fichier `Grunfile.js` de base sur [Gist](https://gist.github.com/klawuy/7174406227e9db3ba5bdca5af7d21d90)\n- [ ] Executer la commande `grunt sync` dans le template\n- [ ] Executer la commande `grunt` dans le template",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Optimisation Référencement SEO",
-    "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
-    "labels": ["tech", "corvée", "site", "seo"],
-    "estimate": 2
-  },
-  {
-    "title": "Mettre en place le composant OSMap",
-    "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
-    "labels": ["boum", "corvée", "site", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Créer la page offline",
-    "body": "## Description\nSi jamais on veut mettre le site hors-ligne, créer la vue \"offline\" associée au template dans offline.php",
-    "labels": ["design", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Créer la page error",
-    "body": "## Description\nSi jamais une erreur se produit, créer la vue \"error\" associée au template dans error.php",
-    "labels": ["design", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Installer le plugin etdeucookie",
-    "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Installer le plugin etdoptimizer",
-    "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Ajouter les mentions légales",
-    "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
-    "labels": ["contenu", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Optimiser la conf Apache",
-    "body": "## Description\nOn optimise la configuration du serveur pour améliorer les temps de réponse, sécuriser les accès aux scripts, et le SEO.\n`.htaccess chez` [HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess)\n\n#### Optimisation SEO : un seul domaine actif (www.xxxxx.fr ou xxxxx.fr pas les 2)\nVoir section `Suppressing / Forcing the `www.` at the beginning of URLs` dans le `.htaccess`\n\nNe pas oublier de mixer avec le .htaccess de Joomla pour l'URL Rewriting.",
-    "labels": ["boum", "optimisation", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Créer le \"faux\" sitemap.xml",
-    "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
-    "labels": ["boum", "corvée", "site", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Enregistrer le site sur Google Webmaster Tools",
-    "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools/\nFichier pour confirmer la propriété : googledbd823a99be2ad9e.html",
-    "labels": ["boum", "corvée", "tech", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Soumettre le sitemap sur Google Webmaster Tools",
-    "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n\n## Prérequis\n - [ ] sitemap opérationnel",
-    "labels": ["boum", "corvée", "tech", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Créer un code Google Analytics",
-    "body": "## Description\nhttps://analytics.google.com/analytics/web",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Code Google Analytics dans le template",
-    "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n\n## Prérequis\n - [ ] code GA créé",
-    "labels": ["boum", "corvée", "site", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Changer les microdata dans l'index.php du template",
-    "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
-    "labels": ["boum", "corvée", "site", "seo"],
-    "estimate": 1
-  },
-  {
-    "title": "Mettre à jour les couleurs du message des cookies",
-    "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Mettre à jour les informations des mentions légales",
-    "body": "## Description\nMettre à jour les informations des mentions légales correspondent à celles du site.\n\n## Prérequis\n - [ ] Nom de l'entreprise/institution\n - [ ] Coordonnées de l'entreprise/institution\n - [ ] Nom de domaine du site web de l'entreprise/institution",
-    "labels": ["boum", "corvée", "site"],
-    "estimate": 1
-  },
-  {
-    "title": "Mettre à jour le lien du site pour le sitemap",
-    "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
-    "labels": ["boum", "corvée", "site", "seo"],
-    "estimate": 1
-  }
-]
+{
+  "vitrine": [
+    {
+      "title": "Contrat d'hébergement",
+      "body": "",
+      "labels": ["administratif", "corvée"],
+      "estimate": 1
+    },
+    {
+      "title": "Acheter/Transférer le nom de domaine",
+      "body": "## Description\nAcheter le nom de domaine sur OVH : https://www.ovh.com/fr/order/domain",
+      "labels": ["administratif", "corvée", "boum"],
+      "estimate": 1
+    },
+    {
+      "title": "Création d'un espace web sur serveur mutu",
+      "body": "## Sous-tâches\n- [ ] Créer l'espace web\n - [ ] Ajouter les logins/mdp à Keepass",
+      "labels": ["corvée", "boum", "tech", "serveur"],
+      "estimate": 1
+    },
+    {
+      "title": "Modifier les zones DNS sur OVH",
+      "body": "## Description\nMettre une zone minimale avec redirection email OVH et adresse IP du mutu : 212.83.180.172.\nhttps://www.ovh.com/manager/web\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH",
+      "labels": ["tech", "corvée", "boum"],
+      "estimate": 1
+    },
+    {
+      "title": "Maquette graphique",
+      "body": "## Description\nFaire la maquette graphique des différentes pages :\n- [ ] Page d'accueil\n - [ ] ",
+      "labels": ["design", "Epic", "site"],
+      "isEpic": true,
+      "epicId": 1
+    },
+    {
+      "title": "Prototype HTML",
+      "body": "## Description\nPrototypage de la maquette en HTML5/CSS3",
+      "labels": ["design", "Epic", "site"],
+      "isEpic": true,
+      "epicId": 2
+    },
+    {
+      "title": "Installation et configuration de Joomla!",
+      "body": "## Description\nInstallation et configuration de Joomla!\n\n## Sous-tâches\n - [ ] Télécharger Joomla! sur joomla.fr\n - [ ] Installer Joomla!\n - [ ] Configurer Joomla! (URL Rewriting, ...)\n - [ ] Ajouter les logins/mdp à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess`" ,
+      "labels": ["45mins", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Initialiser le template Joomla!",
+      "body": "## Description\nCréer le template dans le dossier `templates`.\n - [ ] Fichier `templateDetails.xml` de base sur [Gist](https://gist.githubusercontent.com/jbanety/85606cdf8cc014748521e4b6cf01c670/raw/templateDetails.xml)\n - [ ] Fichier `index.php` de base sur [Gist](https://gist.githubusercontent.com/jbanety/0dbcf060fea0e581eef75054d33596f4/raw/index.php)",
+      "labels": ["tech", "design", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Installation et configuration Grunt",
+      "body": "## Description\nInstallation et configuration Grunt.\n- [ ] Fichier `package.json` de base sur [Gist](https://gist.github.com/klawuy/21c4bad1a64a486467eeccdc8f3d1d70)\n- [ ] Executer la commande `yarn install` dans le template\n- [ ] Fichier `Grunfile.js` de base sur [Gist](https://gist.github.com/klawuy/7174406227e9db3ba5bdca5af7d21d90)\n- [ ] Executer la commande `grunt sync` dans le template\n- [ ] Executer la commande `grunt` dans le template",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Optimisation Référencement SEO",
+      "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
+      "labels": ["tech", "corvée", "site", "seo"],
+      "estimate": 2
+    },
+    {
+      "title": "Mettre en place le composant OSMap",
+      "body": "## Description\nInstaller le composant OsMap dans Joomla!\nIl est disponible dans l'installation à partir du Web en recherchant OSMap. Il faut activer les plugins OSMap si besoin.",
+      "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Créer la page offline",
+      "body": "## Description\nSi jamais on veut mettre le site hors-ligne, créer la vue \"offline\" associée au template dans offline.php",
+      "labels": ["design", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Créer la page error",
+      "body": "## Description\nSi jamais une erreur se produit, créer la vue \"error\" associée au template dans error.php",
+      "labels": ["design", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Installer le plugin etdeucookie",
+      "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Installer le plugin etdoptimizer",
+      "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Ajouter les mentions légales",
+      "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
+      "labels": ["contenu", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Optimiser la conf Apache",
+      "body": "## Description\nOn optimise la configuration du serveur pour améliorer les temps de réponse, sécuriser les accès aux scripts, et le SEO.\n`.htaccess chez` [HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess)\n\n#### Optimisation SEO : un seul domaine actif (www.xxxxx.fr ou xxxxx.fr pas les 2)\nVoir section `Suppressing / Forcing the `www.` at the beginning of URLs` dans le `.htaccess`\n\nNe pas oublier de mixer avec le .htaccess de Joomla pour l'URL Rewriting.",
+      "labels": ["boum", "optimisation", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Créer le \"faux\" sitemap.xml",
+      "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
+      "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Enregistrer le site sur Google Webmaster Tools",
+      "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools/\nFichier pour confirmer la propriété : googledbd823a99be2ad9e.html",
+      "labels": ["boum", "corvée", "tech", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Soumettre le sitemap sur Google Webmaster Tools",
+      "body": "## Description\nGoogle Webmaster Tools : https://www.google.com/webmasters/tools\n\n## Prérequis\n - [ ] sitemap opérationnel",
+      "labels": ["boum", "corvée", "tech", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Créer un code Google Analytics",
+      "body": "## Description\nhttps://analytics.google.com/analytics/web",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Code Google Analytics dans le template",
+      "body": "## Description\nAjouter le code Google Analytics à l'index.php du template\n\n## Prérequis\n - [ ] code GA créé",
+      "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Changer les microdata dans l'index.php du template",
+      "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
+      "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Mettre à jour les couleurs du message des cookies",
+      "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Mettre à jour les informations des mentions légales",
+      "body": "## Description\nMettre à jour les informations des mentions légales correspondent à celles du site.\n\n## Prérequis\n - [ ] Nom de l'entreprise/institution\n - [ ] Coordonnées de l'entreprise/institution\n - [ ] Nom de domaine du site web de l'entreprise/institution",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Mettre à jour le lien du site pour le sitemap",
+      "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
+      "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    }
+  ],
+  "seo": [
+    {
+      "title": "Créer un projet sur webceo.com",
+      "body": "Site : https://online.webceo.com/",
+      "labels": ["boum", "corvée", "tech"],
+      "estimate": 1
+    },
+    {
+      "title": "Recherche des mots clés",
+      "body": "## Description\n\nOn choisit les mots clés efficaces pour optimiser les pages du site.",
+      "labels": ["amélioration", "corvée", "discussion", "Epic", "optimisation", "site"],
+      "isEpic": true,
+      "epicId": 1
+    },
+    {
+      "title": "Créer un liste des mots clés pertinents",
+      "body": "## Description\n\nCréer une liste intelligente des mots clés pertinents que l'audience cible utilise pour trouver les produits et services.\n\n## Détails webceo.com\n\n> Your target keyword list is the foundation of the keyword phrases that you will optimize your site for. Single keywords are highly competitive - in fact so competitive that it is unrealistic to expect that your Web pages can score at the top of the search results for a single keyword search. But, that's okay because you don't need to, nor do you especially want to.\n\n> The search terms that convert best to sales are typically very specific key phrases comprised of two to five words (aka long-tail keywords). For example, if you are male and plan to buy a bike jacket it's not very helpful to search for jackets on Google. You'd narrow down your search to men's bike jackets to find exactly what you want.\n\n> Tip: There are popular keywords with the most searches that have the potential to send a lot of traffic to your sites. However, you'd be better served to use long-tail, more specific keyword terms that will result in the most sales, leads or phone calls. In other words, you are supposed to pinpoint the money keywords that trigger sales and conversions. Your keyword phrase should be powerful enough to draw good visitor traffic, yet specific enough to outplay your competitors and get you to the top on the Search Engines.",
+      "labels": ["45mins", "corvée", "discussion"],
+      "estimate": 1,
+      "epicId": 1
+    }
+  ]
+}
