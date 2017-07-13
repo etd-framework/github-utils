@@ -82,13 +82,13 @@
     },
     {
       "title": "Installer le plugin etdeucookie",
-      "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)",
+      "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)\n - [ ] Activer le plugin depuis l'administration de Joomla!",
       "labels": ["boum", "corvée", "site"],
       "estimate": 1
     },
     {
       "title": "Installer le plugin etdoptimizer",
-      "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`",
+      "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`\n - [ ] Activer le plugin depuis l'administration de Joomla!",
       "labels": ["boum", "corvée", "site"],
       "estimate": 1
     },
