@@ -168,17 +168,262 @@
     },
     {
       "title": "Recherche des mots clés",
-      "body": "## Description\n\nOn choisit les mots clés efficaces pour optimiser les pages du site.",
+      "body": "## Description\nOn choisit les mots clés efficaces pour optimiser les pages du site.",
       "labels": ["amélioration", "corvée", "discussion", "Epic", "optimisation", "site"],
       "isEpic": true,
       "epicId": 1
     },
     {
+      "title": "Keyword Suggestion pour trouver d'autres mots clés",
+      "body": "## Description\nUtiliser l'outil `Keyword Suggestion` pour agrandir la liste des mots clés avec des phrases proches.\n\n## Détails webceo.com\n> When choosing your keywords it's very important that you do your research. So, before you optimize your site use our Keyword Tool to get keyword suggestions you haven't thought of yet. This tool will help you understand the different keywords for your industry so that you don't accidentally target the wrong keywords.\n>\n> For example, if you sell all types of dresses online, you would use this tool and realize that you may want to add the following phrases to your list to be sure to catch all of the potential traffic:\n> black dress, evening dresses, plus size dresses, cocktail dresses, formal dresses, party dresses, maxi dress, summer dresses, designer dresses, white dresses, mother of the bride dresses, sun dress, strapless dresses, vintage dresses, long dresses, dresses for sale, dresses online.\n> Keywords are the foundation of your optimization and future search engine rankings.",
+      "labels": ["45mins", "contenu"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
       "title": "Créer un liste des mots clés pertinents",
-      "body": "## Description\n\nCréer une liste intelligente des mots clés pertinents que l'audience cible utilise pour trouver les produits et services.\n\n## Détails webceo.com\n\n> Your target keyword list is the foundation of the keyword phrases that you will optimize your site for. Single keywords are highly competitive - in fact so competitive that it is unrealistic to expect that your Web pages can score at the top of the search results for a single keyword search. But, that's okay because you don't need to, nor do you especially want to.\n\n> The search terms that convert best to sales are typically very specific key phrases comprised of two to five words (aka long-tail keywords). For example, if you are male and plan to buy a bike jacket it's not very helpful to search for jackets on Google. You'd narrow down your search to men's bike jackets to find exactly what you want.\n\n> Tip: There are popular keywords with the most searches that have the potential to send a lot of traffic to your sites. However, you'd be better served to use long-tail, more specific keyword terms that will result in the most sales, leads or phone calls. In other words, you are supposed to pinpoint the money keywords that trigger sales and conversions. Your keyword phrase should be powerful enough to draw good visitor traffic, yet specific enough to outplay your competitors and get you to the top on the Search Engines.",
+      "body": "## Description\nCréer une liste intelligente des mots clés pertinents que l'audience cible utilise pour trouver les produits et services.\n\n## Détails webceo.com\n> Your target keyword list is the foundation of the keyword phrases that you will optimize your site for. Single keywords are highly competitive - in fact so competitive that it is unrealistic to expect that your Web pages can score at the top of the search results for a single keyword search. But, that's okay because you don't need to, nor do you especially want to.\n>\n> The search terms that convert best to sales are typically very specific key phrases comprised of two to five words (aka long-tail keywords). For example, if you are male and plan to buy a bike jacket it's not very helpful to search for jackets on Google. You'd narrow down your search to men's bike jackets to find exactly what you want.\n>\n> Tip: There are popular keywords with the most searches that have the potential to send a lot of traffic to your sites. However, you'd be better served to use long-tail, more specific keyword terms that will result in the most sales, leads or phone calls. In other words, you are supposed to pinpoint the money keywords that trigger sales and conversions. Your keyword phrase should be powerful enough to draw good visitor traffic, yet specific enough to outplay your competitors and get you to the top on the Search Engines.",
       "labels": ["45mins", "corvée", "discussion"],
       "estimate": 1,
       "epicId": 1
+    },
+    {
+      "title": "Analyse les concurrents pour trouver d'autres mots clés",
+      "body": "## Description\nOn espionne la concurrence pour obtenir plus de suggestions en fonction des mots clés.\n\n## Détails webceo.com\n> Assistant: Keyword Tool\n>\n> Competitive Analysis is a strategy that will allow you to be truly successful. Knowing what keywords your competition is targeting and ranking for is another smart way to find keywords that lead to the type of traffic you want.\n>\n> To easily see what keywords your competition is ranking for just go to our Keyword Tool and enter the URL of any competing site. You'll then see their keywords and how they rank in the different search engines. This can show you keywords that you haven't thought of yet.",
+      "labels": ["45mins", "contenu", "tech"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
+      "title": "Google Search Console pour voir comment améliorer le contenu",
+      "body": "## Description\nOn utilise Google Search Console (avant Google Webmaster Tools) pour identifier la façon d'améliorer le contenu du site.\n\n## Détails webceo.com\n> Assistant: Keyword Tool\n\n> The 'Keywords from Google Search Console (formerly Google Webmaster Tools)' report consists of a list of keywords your site pages were shown for with the number of impressions, clicks, CTR and the average position these keywords have.\n>\n> Use this report to improve your existing content. First, sort the keywords by clicks. When you sort by clicks, you can focus on the most relevant target searchers who perform the search looking for something your site has to offer. Analyze if the queries you expect to be driving traffic to your site are at the top of the list.\n>\n> Now you can optimize relevant pages for the Search Analytics that have the highest CTR.",
+      "labels": ["45mins", "contenu", "tech"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
+      "title": "Géolocaliser les mots clés pour cibler une audience locale",
+      "body": "## Description\nGéolocaliser les mots clés pour cibler une audience locale\n\n## Détails webceo.com\n> If you offer local services or run a brick-and-mortar business, be sure to localize your keywords: add regional names (state, city or district) to the previously selected keywords.\n>\n> For example, if you offer real estate brokering services in Atlanta, you may want to add the name of your city to each of your targeted keywords:\n> Atlanta real estate agent\n> Atlanta real estate broker\n> Atlanta real estate for sale\n> Atlanta commercial real estate",
+      "labels": ["contenu", "tech"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
+      "title": "Affiner la liste",
+      "body": "## Description\nAffiner la liste des mots clés en fonction de leur efficacité.\n## Détails webceo.com\n> Assistant: Keyword Tool\n>\n> As soon as your initial keyword list is ready, analyze the detailed info (Google local searches, Bid competition and Search trends) on each one.\n>\n> Use our Keyword Tool to analyze the effectiveness of each keyword so that you can narrow down your list. The following metrics should be taken into account:\n>\n> **Global local searches**: This metric shows how many times per month people request the keyword in your targeted area. More is better.\n>  **Bid competition**: Shows how many advertisers are bidding for the given keyword. Less is better. Your ideal target may be a keyword with a lot of searches and low competition.\n> **Search trends**: This metric shows spikes in popularity of a given keyword over the past 12 months. This helps you pick the right words and avoid seasonal keywords, which will show a drop in popularity in the next few months.",
+      "labels": ["contenu", "site"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
+      "title": "Sélectionner les pages intéressantes pour les mots clés",
+      "body": "## Description\nOn sélectionne les pages les plus valorisables pour les optimiser pour les mots clés ciblés.\n\n## Détails webceo.com\n> Assistant: Landing Pages Overview\n>\n> You have already picked keywords to optimize your pages for. Now you should decide which pages on your site you should optimize and for which keywords, in order to get high search engine rankings.\n>\n> Your landing pages should definitely NOT be the Terms of Use or Privacy Policy pages, but the pages that are meant to showcase your merchandise, attract targeted visitors and serve as landing pages.\n>\n> Tip: Be sure to optimize your home page and all pages that are already popular on Google. Use the Top Pages report of the Google Search Console tool to find them.\n>\n> It is recommended that you optimize each page for NO more than 5 keywords or keyword phrases (2-3 major keywords and several complementary ones). Each specific page should be optimized for its own individual set of keywords.\n>\n> There are numerous places on each web page where you might place your keywords - and some page locations are much more effective than others. We'll show you in the next stages how keyword placement can make a big difference in terms of ranking well within the search results.",
+      "labels": ["amélioration", "discussion", "tech"],
+      "estimate": 1,
+      "epicId": 1
+    },
+    {
+      "title": "On-page SEO",
+      "body": "## Description\nOptimisation de la structure du site et des pages pour améliorer le rang dans les recherches",
+      "labels": ["amélioration", "Epic", "optimisation", "site", "tech"],
+      "isEpic": true,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser les balises TITLE",
+      "body": "## Description\nOn optimise les balises TITLE des pages pour les mots clés ciblés.\n\n## Ressources\n- [Snippet optimizer](http://www.seomofo.com/snippet-optimizer.html)\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> Title Tags – The most important location to place your page's chosen keywords is within the HTML `<title>` tag. These are the keywords that literally tell the search engines what your page is about. For users, the title tag is the text that shows up in a browser window header when users open your page and the Title is used in the line that serves as the main descriptor which is bolded as a link on the search results pages. They can also see this text in their Bookmarks/Favorites menu after they save your page to bookmarks.\n>\n> Therefore, this is where you should always place the most important keywords you're optimizing a page for. You should also avoid wasting valuable space with words like your company name, unless your business is so well known that people use your company name as their primary keyword while searching for what you sell (like eBay, for example).\n>\n> In the code of the page, the title tag looks like the following:\n> `<TITLE>Your keyword-optimized title</TITLE>`\n>\n> Google typically displays the first 55-60 characters of a title tag, or as many characters as will fit into a 600-pixel display.\n>\n> Important things to know: If you keep your titles under 60 characters, you can expect at least 95% of your titles to display properly. Be sure it's the first tag in the `<HEAD>` area and remember that each page needs its own unique title tag.\n>\n> Use our Landing Page SEO report to check for the presence of keywords in the titles of your pages.",
+      "labels": ["contenu", "optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Retirer les balises TITLE en double",
+      "body": "## Description\nRetirer les balises TITLE en doublon\n\n## Détails webceo.com\n> Assistant: On-Site Issues Overview\n>\n> Since the Title tags are the most important parts of a web page for both the user experience and search engine optimization, it is highly necessary to avoid duplicate Title tags across your website. The Google Panda update fights against low quality content across the Web and the first thing they consider is whether a site has duplicate Title tags on many of its web pages. It's a sign of sloppy coding at best and spamming at worst.\n>\n> Investigate your website for duplicate Title tags and rewrite them to make them unique and descriptive. Pay special attention to your landing pages - pages that are most likely to attract searchers in the SERPs and convert them into clients.",
+      "labels": ["amélioration", "contenu", "optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Créer les balises META Description",
+      "body": "## Description\nCréer une balise META Description unique et pertinente pour chaque page optimisée.\n\n## Ressources\n- [Snippet optimizer](http://www.seomofo.com/snippet-optimizer.html)\n\n## Détails webceo.com\n>  Assistant: Landing Page SEO\n>\n> The META Description tag is a summary of your page's content. This tag was primarily meant for the search engines to let them know what the page was about and used to play a serious role in your rankings. Today, the META Description won't effect rankings but it's still used as the description of your page within the search results. It's also the text that comes up automatically when the URL is shared socially.\n>\n> In the code of the page, the META Description tag looks like the following:\n> `<META name=\"description\" content=\"Page description\" />`\n>\n> Each of your pages needs it's own unique META Description tag. The tag needs to be between 150-165 characters, should read naturally and include keywords relevant to the page. Do NOT stuff or repeat your keyword in this tag because the search engines consider that a tactic of spammers.\n>\n> Use our Landing Page SEO report to check for the presence of keywords in the META Description tags of your pages.",
+      "labels": ["app", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Retirer les balises META Description en double",
+      "body": "## Description\nRetirer les balises META Description en doublon\n\n## Détails webceo.com\n> Assistant: On-Site Issues Overview\n>\n> One of the metrics search engines use to rank is the website's quality. After Google made the Panda update a part of its regular algorithm, unique content has become vitally important for high rankings.\n>\n> Each page of your site should have a unique Description tag as search engines may use it as a snippet on a SERP.\n>\n> Investigate your website for duplicate Description tags and rewrite the duplicate ones to describe what any specific page is about. When writing descriptions for your landing pages, think about them as equivalent to ad copy. The Description tags should draw readers to a website from the SERP.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser les titres (headings) des pages",
+      "body": "## Description\nOn optimise les titres des pages pour les mots clés ciblés.\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> When creating web pages, people use Header tags (`<H1>`, `<H2>`, `<H3>`, etc. tags) to label headlines. Search engines still consider the contents of these tags as important (especially the first-level heading tag - `<H1>`), however their importance is still much lower than the `TITLE` tag.\n>\n> Include your most important keywords and key phrases within the first-level heading:\n> `<H1>Your first-level heading with keywords</H1>`\n>\n> Use only one `<H1>` tag on any page if your site is on HTML4.\n>\n> Via HTML5 you can use as many sets of `<H1>` tags as are required. But that doesn't mean they should be freely added in arbitrary locations.\n>\n> In most cases, the top-level heading will be the same as the `TITLE`.\n>\n> Also use `<H2>` and `<H3>` tags on a page in order to structure information in a proper way; be sure to enrich them with keywords, too.\n>\n> Use our Landing Page SEO report to check for the presence of keywords in the headers of your pages.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser la zone BODY des pages",
+      "body": "## Description\nOn optimise la zone `BODY` des pages du site internet.\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> BODY text is the text that you can see on a web page. That is why your site's content needs to be optimized in such a way that it can suit both search engines and your readers.\n>\n> You should carefully optimize pages that are meant to attract targeted visitors and serve as landing pages. It is recommended that you optimize each page for NO more than 3 keywords (1 major keyword and 2 complementary ones). Each specific page should be optimized for its own individual set of keywords.\n>\n> Try to have a moderate keyword density so that it can help the search engine to determine that your page is related and relevant to the keyword you are targeting.\n>\n> **Note:** do not stuff your keywords unnaturally, because it may turn on Google's filter for over-optimization.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 2,
+      "epicId": 2
+    },
+    {
+      "title": "URLs, Fichiers, Sous-Domaines \"Search Engine Friendly\"",
+      "body": "## Description\nOn crée/modifier les URLs, noms de ficher et sous-domaines pour les rendre SEF.\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> Being sure that you create file names and therefore URLs that search engines like is very important and surprisingly easy when you know the basics.\n>\n> In general, URL structure for SEO optimization follows a general rule that:\n> The more generic your keyword - the earlier you want it in your URL structure.\n>\n> For instance, if you are trying to rank for a very competitive and extremely generic term like 'music' that returns more than a billion search results at Google, you definitely need to place that keyword in the domain. With such a generic keyword only placement within the domain name will have heavy enough benefits at this point to make a significant ranking difference.\n>\n> However, if you want to score for a less competitive keyword like a specific cell phone model, using your keyword (the model number of the phone) as a subdirectory or file name will typically work quite well. Again - don't over do keywords in your URL. A good rule of thumb is this:\n>\n> If the URL looks like spam, it probably will be treated as spam.\n>\n> The search engines caught on a long time ago to the www.viagra-pills-casino.com/ style domain names and file structures. Today you want to use domain and file names that are common sense to the human visitors of your site. Always bear in mind that people do look at the file names within the search results. And seeing the keywords highlighted in the URL does increase click-through-rates.\n>\n> Again, be sure your keywords are in the URL in a way that looks natural and only once. You don't want to have them in there more than that or it looks spammy.",
+      "labels": ["contenu", "optimisation", "site", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser les liens internes",
+      "body": "## Description\nOn optimise avec une attention particulière le texte des liens internes pour les mots clés ciblés.\n\n## Détails webceo.com\n> Assistant: Internal Links Optimization\n>\n> The text used when one page links to another is called the anchor text. This is an extremely important concept to grasp because Google and the other search engines look for keywords located within the anchor text to understand what the site and, specifically a page, is about.\n>\n> In the code of the page, the anchor text looks like the following:\n`> <a href=\"http://www.example.com/keyword-phrase.html\" target=\"_blank\"> Visible anchor text with keywords</a>`\n>\n> In fact, this specific keyword strategy is one of the primary tactics for ranking at the top of the search results. However, be warned - because of heavy manipulation by marketers, Google regards high percentages of exact match keyword anchor texts to be spam unless the text is your company name or the name of your website. Natural anchor text links for a given domain tend to be mostly a mix of the domain name, company name, brand names and specific URLs. When a site has a large percentage of inbound links containing an exact match keyword phrase that isn't your company or site name, it can trigger a penalty. Yes, you want keyword anchor text links, but the same one should not be more than 25% of your inbound links as a general rule of thumb.\n>\n> For example, if your company name is Good Times Realty and your offices are in San Diego, if a high percentage of your inbound links say \"San Diego Realtors,\" then that may very likely cause you problems with Google. If the majority are \"Good Times Realty\" and goodtimesrealty.com, that would be a more natural link profile.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Évaluer la qualité des liens entrants",
+      "body": "## Détails webceo.com\n> Assistant: Backlink Quality Check\n>\n> Garnering links still remains a critical method of search engine marketing. With the Google Penguin 4.0 algorithm update, you should pay more attention to the quality of your backlink profile. Conduct an analysis of your backlinks in order to keep your site safe from search engine penalties. Links from bad neighborhoods, sitewide links or a bunch of links with the same exact anchor text may harm your rankings. Investigate who links to you and, if you feel you've been penalized, disavow toxic links with the help of the Backlink Quality Check tool.",
+      "labels": ["site", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser les attributs ALT et TITLE des images",
+      "body": "## Description\nOn optimiser les attributs ALT et TITLE des images pour les mots clés ciblés.\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> `<img alt=\"text\">` Tag - Use it wisely and you can quickly turn Images into Assets. Engines can't index your image based only on what the image looks like - you need to tell them what the image is with text. The only indexable keyword aspect of images is the text of the page the image is on but most importantly the text you put in the <img alt=\"text\"> tag.\n>\n> Use of the ALT tag also is very effective in helping your images rank well in Search Engines Image Search, so it should NOT be ignored.\n>\n> Bear in mind that you shouldn't expect a big ranking boost from this tactic - in fact you may get none at all. Including image ALT text is a optimization technique that even Bing suggests you use for better ranking.\n>\n> Two more reasons for using the ALT tag are:\n>\n> When you make an image a link, the ALT text functions as anchor text and can therefore influence the ranking for the target page similar to how text based anchor text works. Typically text links are regarded as better for this purpose, but if you have to use an image for your link, be sure to include the similar keywords optimized text in the ALT text.\n> The latest HTML specs require that images have an ALT tag, failure to include this information will cause validation errors.\n>\n> In essence, using the ALT tag can sometimes help, and will never hurt your ranking and web design efforts. Therefore, you should use the ALT tag whenever doing so holds any chance of making an image keyword-meaningful and thereby stacking the advantages in your favor.\n>\n> Be sure to use our Landing Page SEO report to check how well you optimized image ALTs and image titles for your targeted keywords.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Choisir un domaine préféré (WWW vs. Non-WWW)",
+      "body": "Ressources :\n- [`.htaccess` chez HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess#L358)\n\n## Détails webceo.com\n> Search engines index www and non-www URLs as different domains. This means that links to http://www.example.com and http://example.com are counted separately.\n>\n> You can fix this by choosing which format you prefer (also called the canonical one) and redirecting the other one to it. You will need to use a server-side 301 redirect to redirect all your other domains to the preferred one. This is considered an advanced strategy and if done wrong can do real damage to your site.\n>\n> Here's a complete step by step guide to be sure you get your 301 redirect right: How to Use a 301 Redirect to Keep Your Web Pages from Dropping Off the Face of the Earth.\n>\n> Tip: If you doubt what domain should become your preferred, run our Backlink Checker and choose the one with the most backlinks.\n>\n> Note: Be sure that all links on your site (including the Sitemap) point to the correct URLs. No links or Sitemap listings should point to a URL that redirects!",
+      "labels": ["optimisation", "site", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Éviter le contenu dupliqué",
+      "body": "## Détails webceo.com\n> Duplicate content is substantive blocks of content within or across domains that either completely match each other or are very similar. Search Engines will index the ONE version of the content they feel is the original and most authoritative and will disregard the others. Some malicious reasons for duplicate content are when someone illegally copies someone else's content and hurts the victim's ranking.\n>\n> However, most of the time it's due to technical, non-malicious reasons why duplicate content exists on the Web:\n>\n> Country-specific content stored on one domain;\n> Inconsistent internal linking (you link to the same page with http://www.example.com/page/ and http://www.example.com/page, and http://www.example.com/page/index.htm);\n> Ecommerce sites have products shown or linked via multiple distinct URLs (session IDs, URL parameters used for tracking and sorting);\n> Archived Web pages that are created by your content management system (CMS system);\n> Printer-only versions of Web pages;\n> Comment pagination (when each comment has its own page if you click on it and everything in the comment section is followed by spiders);\n> Forums that generate both regular and stripped-down mobile-targeted pages.\n>\n> To ensure that visitors see the content you want them to, do the following:\n>\n> Use top-level domains whenever possible to handle country-specific content to help search engines to serve the most appropriate version of a document. For example, http://www.example.es that contains Spain-oriented content is much better than http://www.example.com/es or http://es.example.com.\n> Keep your internal linking consistent. For example, don't link to http://www.example.com/page/ and http://www.example.com/page and http://www.example.com/page/index.htm. These can be seen as all different pages by a search engines spider.\n> Research how your content management system displays the content of your site. Blogs, forums and related systems often show the same content in multiple formats. For example, a blog entry may appear on the home page of a blog, in an archive page and in a page of other entries with the same label or tag.\n> If you've restructured your site, use 301 redirects (\"Permanent Redirect\") in your .htaccess file to smartly redirect users and search engines' bots. (In Apache, you can do this with an .htaccess file; in IIS, you can do this through the administrative console.)\n> Avoid using similar content on different pages. If you have many pages that are similar, consider expanding each page or consolidating the pages into one.\n>\n> Use the rel=\"canonical\" link element inside the less important pages that have similar content to an important one (the canonical one). You can specify a canonical page to search engines by adding a <link > element with the attribute rel=\"canonical\" to the <head> section of the non-canonical version of the page. Adding this link and attribute lets you identify sets of identical content and suggest to Google what page of all those with identical content is important. For example, if your important page URL is http://example.com/page1.html, add <link rel=\"canonical\" href=\"http://example.com/page1.html\"/> into the <head> section of all non-canonical versions of the page. Go here to learn more.\n>\n> Note: If you find that another site is duplicating your content by scraping, you may file a DMCA request to Google, Yahoo, and Bing to claim ownership of the content and request removal of the other site from search engines' index.\n>\n> Google's Panda update was originally designed to rid the search results of duplicate, spun and just low quality content.",
+      "labels": ["45mins", "contenu", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Utiliser l'attribut rel=\"canonical\"",
+      "body": "## Description\nOn utilise l'attribut `rel=\"canonical\"` pour spécifier la page que l'on préfère indexer\n\n## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> In the world of content management and online shopping systems, it's common for the same content to be accessed through multiple URLs. To avoid being hit by a Google Panda algorithm update, be sure to use a rel=canonical link element to specify the preferred page to index.\n>\n> Add a <link> element with the attribute rel=\"canonical\" to the <head> section of the pages:\n> `<link rel=\"canonical\" href=\"https://blog.example.com/canonical_url\" />`\n>\n> The https://blog.example.com/canonical_url will be the preferred URL for search engines to use to access the content, so that the search results will be more likely to show users that URL structure.\n>\n> Note: Use absolute paths rather than relative paths with the rel=\"canonical\" link element.\n>\n> Specify no more than one rel=canonical link for a page. When more than one is specified, all rel=canonicals will be ignored.",
+      "labels": ["app", "contenu", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser la structure des liens internes",
+      "body": "## Description\nOn optimise la structure des liens internes du site.\n\n## Détails webceo.com\n> Assistant: Internal Links Optimization\n>\n> Optimization of your site's linking structure helps you spread PageRank, aka link juice, to the pages that need it. The valuable pages that you optimize should receive as many incoming links as possible and have a small amount of outgoing links to high authority pages.\n>\n> For this purpose, remove the links to the less important pages on your site and place more links to the pages that you want to optimize. This will direct link juice to your important pages and help to push them up in the rankings.\n>\n> Note: Sitewide links (links from a site's navigation menu or a footer on every page, for example) are less valuable than links placed in the text and surrounded with thematically relevant words. Sitewide links to other sites could potentially get you penalized.",
+      "labels": ["contenu", "optimisation", "site"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Utiliser des redirections 301",
+      "body": "## Description\nOn utilise des redirections SEF 301 quand on change la structure du site internet.\n\n## Ressources\n- Dans Joomla, on utilise le plugin de redirection et le composant associé.\n\n## Détails webceo.com\n> You should use a SEO-friendly server-side 301 Moved Permanently redirect if you change your website's URL structure and a web page you remove has a suitable alternative page on your web site.\n>\n> 301 redirects are particularly useful if:\n> - You moved your site to a new domain, and you want to make the transition as seamless as possible.\n> - You're merging two websites and want to make sure that links to outdated URLs are redirected to the correct pages.\n>\n> A 301 Moved Permanently redirect means that a requested resource has been moved permanently to a new URL and any future references to this resource should use one of the returned URLs. Google recommends using a 301 redirect to change the URL of a page as it is shown in search engine results.\n>\n> To implement a 301 redirect for websites that are hosted on servers running Apache, you'll need access to your server's .htaccess file. (If you're not sure about your access or your server software, check with your webhoster.) For more information, consult the Apache .htaccess Tutorial and the Apache URL Rewriting Guide. If your site is hosted on a server running other software, check with your hosting service for more details.",
+      "labels": ["contenu", "optimisation", "site", "ux"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Réécriture des URLs dynamiques",
+      "body": "## Description\nOn réécrit les URLs dynamiques pour les rendre SEF.\n\n## Détails webceo.com\n> Assistant: On-Site Issues Overview\n>\n> If you use dynamically generated pages on your site, it is important to keep your pages' URLs as simple as possible - so that search engines can easily crawl and index them. URLs should also be friendly to read, share and list in SERPs.\n>\n> For example, the following URL is not search engine friendly:\n> `http://www.example.com/viewproduct.php?category=7465&product=1234&color=black&sid=864676987`\n>\n> Instead, you could use a more search engine friendly URL:\n> `http://www.example.com/shirts/dc-north-pointe/black/`\n>\n> The second URL does not contain any parameters and session IDs so it is easy to crawl and index for the SEs. It is also easy to remember for web surfers. Besides, in case the site structure allows for removing the /black/ part of the URL in the address bar, a happy user will easily find oneself one level higher, without using any navigation.\n>\n> To make your URLs search engine and user friendly, consider doing the following:\n> - Hide any query strings in your URLs.\n> - Avoid the use of session IDs in URLs. Consider using cookies instead.\n>  - Use words in URLs and a simple directory structure (it is preferable that the directory names have relation to the content in them).\n> - Allow for the possibility that a part of the URL will be removed.\n>\nmethod of URL rewriting.",
+      "labels": ["45mins", "contenu", "optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Inspecter les liens morts",
+      "body": "## Descriptions\nInspecter le site pour les liens morts et les ancres oubliées.\n\n## Détails webceo.com\n> Assistant: Technical Audit\n>\n> To make your site user-friendly and search-engine-friendly, make sure your site is free from problems like broken links and missing anchors. Use the Technical Audit tool to do a regular site quality check. See if any problems are detected on your site and correct things where necessary. Note: Pay attention to the best practices for making web pages fast identified by Yahoo!",
+      "labels": ["a surveiller", "contenu", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser la vitesse du site",
+      "body": "## Détails webceo.com\n> Assistant: Page Speed\n>\n> Your site speed needs to be a priority because slow sites decrease visitor satisfaction, conversion rates and also has a direct impact on your rankings in Google. Use Google PageSpeed Insights to measure your Website speed score. Implement the advice Google gives you to improve your Website load speed.\n>\n> Then, to take it to the next level here are 5 quick tips proven to increase your page load speeds.",
+      "labels": ["app", "contenu", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Utilser les Schema Markups",
+      "body": "## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> Schema Markup (also called 'microdata') tells search engines what your site is about in a form search engines can easily understand. Besides, the Schema Markup is used to create rich snippets on the SERPs. Rich Snippets are search results with enhancements like pictures, reviews, prices, events, show times, phone numbers, addresses and even recipes. They result in a much higher click thru rate and visitors love them.\n>\n> Schema.org is the home of all the available snippets that the search engines have agreed, as a group, to support going forward. Add appropriate Schema Markup to improve your pages' rankings and attract more clicks.\n>\n> Note: Use the Google Structured Data Markup Helper to generate HTML code with Schema Markup included or the Google Structured Data Testing Tool to test your existing markup.\n>\n> Use this resource to Understand and Leverage Rich Snippets to Dominate Your Industry.",
+      "labels": ["optimisation", "site", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Optimiser pour les mobiles",
+      "body": "## Détails webceo.com\n> Assistant: Mobile Optimization\n>\n> The world is shifting towards mobile and it is vital to have your website optimized for mobile devices if you do not want to lose customers.\n>\n> Mobile optimization means the proper display of your website's content on mobile devices with different screen sizes. There are different ways to do this:\n>\n> -  A redirect to a mobile version of the website. Make sure you redirect your visitors to a corresponding mobile page, when they access your site from a mobile device. To serve visitors the correct version of your website, use redirects based on user agents. (Remember that only a 301 redirect is search engine friendly).\n> -   Responsive website design. Google prefers mobile solutions that maintain the same URL across platforms, so it is better to make your web pages responsive. Responsive design means that you define a dynamic stylesheet that behaves differently based on a range of screen resolutions. This allows you to resize, move and hide elements to whatever extent.\n>\n> The responsive design syntax looks like this:\n>\n> ```css\n> @media (min-width: 1200px) {\n>   .logo img { display:inline-block; }\n>   .logo span { display:none; }\n> }\n> ```\n> Using responsive web design can assist in optimizing your website for both visitors and search engines. First, you will retain a substantial part of the original user experience for whatever device. Second, you will serve one version of your website's content on one domain only, which is good for SEO and prevents the accumulation of outdated content on a mobile version of your website.\n>\n> One more thing that is important in the modern world of mobile search is the mobile page speed load. Mobile page speed is both important for your page's ranking and user experience. Use the 'Mobile Optimization' report to be sure your landing page is optimized for mobile devices properly.",
+      "labels": ["a surveiller", "contenu", "optimisation"],
+      "estimate": 2,
+      "epicId": 2
+    },
+    {
+      "title": "Supprimer tous signes de Black-Hat SEO si détectés",
+      "body": "## Détails webceo.com\n> Assistant: Landing Page SEO\n>\n> Using Black-Hat techniques like keyword stuffing, hidden text, cloaking, duplicate or stolen content, link schemes, etc. may bring an immediate traffic boost that may last for a short period of time. However, sooner rather than later, these things will get you penalized or even completely banned from the search engines.\n>\n> Here is a description of the most common of these techniques:\n>\n> Keyword stuffing is the excessive use of keywords within the important areas of your pages. Remember that you create pages for users first of all, so make your content sound organic. Do not overuse keywords in TITLEs, anchor text and other important areas of your pages, as the SEs may consider this to be spam.\n>\n> Excessive number of H1 headings was often used to manipulate the search engines results and get higher rankings for the certain keywords. Since then search engines have become more intelligent and they now want a page to have only one H1 heading. Pages with an excessive number of H1 headings are considered spammy and may get a website banned from search results overall.\n>\n> Using duplicate or stolen content may lead to exclusion of your web pages from an SE index, so we strongly recommend that you avoid this practice. Your content should be fresh and unique, and bring value to the readers. If you are not sure about your copywriting skills, you'd better hire a good copywriter who will do this job for you.\n>\n> A link scheme is a method of interlinking non-related sites in an attempt to artificially build backlinks and inflate PageRank to the pages that are being promoted. Search engines have already learned to detect most types of link schemes, so we do not recommend using this method of website promotion.",
+      "labels": ["45mins", "contenu", "optimisation"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Utiliser Google Search Console pour géolocaliser le site",
+      "body": "## Description\nOn utilise Google Search Console pour associer une localisation géographique au site\n\n## Détails webceo.com\n> Set up a Google Search Console account for the site you run, and specify which country you are targeting:\n>\n> 1. Click on Search Traffic.\n> 2. Proceed to the International Targeting report.\n> 3. Click the Country tab.\n> 4. Check the Target users checkbox and select your country target.\n>\n> Note: This feature is restricted to those sites with a given country code top-level domain.",
+      "labels": ["optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 2
+    },
+    {
+      "title": "Soumission sur les moteurs, annuaires et autres",
+      "body": "",
+      "labels": ["Epic", "optimisation", "tech"],
+      "isEpic": true,
+      "epicId": 3
+    },
+    {
+      "title": "Créer un sitemap XML",
+      "body": "## Description\nOn crée un sitemap XML pour laisser les moteurs de recherche en savoir plus sur les pages du site.\n\n## Détails webceo.com\n> Assistant: Sitemap Generation\n>\n> A sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, plus how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.\n>\n> The main benefits of a sitemap from the SEO point of view are:\n>\n> -    With a sitemap search engines can crawl pages that aren't otherwise discoverable;\n> -    You can give search engines information about a page's priority with an optional tag in the sitemap. This can help them to order the crawling of the Web site based on priority information;\n> -    You can use two more optional tags: \"lastmod\" tells search engines when a page last changed, and \"changefreq\" indicates how often the page is likely to change.\n>\n> To generate sitemaps, you can use our Sitemap Generator. A sitemap is then submitted to the search engines.\n>\n> If you create your XML sitemap manually, name a file 'sitemap.xml' and upload it to the root directory. Any sitemap file that you provide must have no more than 50,000 URLs and must be no larger than 10MB. If you want to list more than 50,000 URLs, you must create multiple Sitemap files and index them in a Sitemap index file.",
+      "labels": ["site", "tech"],
+      "estimate": 1,
+      "epicId": 3
+    },
+    {
+      "title": "Créer un robots.txt",
+      "body": "## Description\nOn crée un fichier `robots.txt` pour restreindre les moteurs de recherche de \"crawler\" les pages qu'ils ne doivent pas indexer.\n\n## Détails webceo.com\n> One of the most critical SEO tasks is to control the search engine spiders (like Googlebot) that crawl and index your Web site. Mastery of these spiders is paramount to preventing duplicate content while ensuring that search engines focus mainly on your most important pages.\n>\n> Although it may seem a bit technical, spider control is actually easier than most people think. It's simply a matter of deploying an essential tool called the robots.txt file.\n>\n> Robots.txt gives spiders (aka, robots) the direction they need to find your most important pages and skip the ones you don't want indexed. Robots.txt is also called the Robots Exclusion Protocol.\n>\n> In respect to SEO, the robots.txt file is a must-have! First, you should exclude folders without search value like cgi-bin, folders with scripts, pages that are available only to registered users; it is also a good SEO idea to exclude pages with duplicate content\n>\n> (for example, your articles archive) to prevent them from outranking the original pages.\n>\n> See an example of a robots.txt file:\n>\n> ```\n> User-agent: Googlebot\n> Disallow:\n>\n> User-agent: *\n> Disallow: /cgi-bin/\n> Disallow: /tmp/\n> ```\n>\n> This robots.txt file will disallow all spiders from scanning your \"cgi-bin\" and \"tmp\" directories (where most webmasters keep the server-side scripts and temporarily files)\n>\n> however the Googlebot will have access to it.\n>\n> Once the robots.txt file is ready, be sure to place it in the root of your Web site hierarchy.\n>\n> You can generate a robots.txt file using Google Search Console (formerly Google Webmaster Tools). To do this click the site you want, then under Site configuration, click Crawler access, click the Generate robots.txt tab and follow mentioned steps. To check that your robots.txt file is behaving as expected, use the Test robots.txt tool in Search Console.\n>\n> Tip: You should avoid making lots of changes to your site's robots.txt file all at once. Why? Because if you make a mistake it will be easy to see exactly what you changed so you can easily roll it back. It's important that you be very careful whenever you're making changes that impact which of your pages get listed in the search results. Small-steps are always a good idea.",
+      "labels": ["site", "tech"],
+      "estimate": 1,
+      "epicId": 3
+    },
+    {
+      "title": "Soumettre le sitemap XML",
+      "body": "## Détails webceo.com\n> Assistant: Submission Tool\n>\n> Search engines are one of the most popular methods to have your target customers find you. If search engines haven't indexed your important pages through their incoming links, it's essential that you submit your XML sitemap directly to the search engines.\n>\n> Use our Submission Tool to submit your XML sitemap to the major search engines.\n>\n> Tip: If you want your XML sitemap to be indexed more quickly, use your Bing Webmaster Tools account and submit it to Bing manually.",
+      "labels": ["optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 3
+    },
+    {
+      "title": "Soumettre les pages automatiquement",
+      "body": "## Description\nOn soumet les pages aux moteurs de recherche qui accepte les soumissions automatiques.\n\n## Détails webceo.com\n>Assistant: Submission Tool\n>\n> If you don't have an XML sitemap, you can still submit your pages to the search engines. However, remember that the major search engines want to find your pages naturally. They do this by landing on your site and then following links from the top level down into deeper pages (a sitemap is just a map of your site for the se bots). That's why being sure your site is interlinked correctly is so important to getting your site completely indexed.\n>\n> Unfortunately, some smaller search engines, including local ones, do not support XML sitemaps so if your pages aren't being indexed by them then you have the option to submit pages manually.\n>\n> Before you do search engine submissions, be sure you have the following information at hand:\n>\n> -    Page URL;\n> -    Title of each web page you submit;\n> -    Its META Description;\n> -    Keywords you used for optimization of this page;\n> -    A valid email address (often required when you fill in submission forms).\n>\n> We recommend doing submissions only after your site has received several backlinks. Otherwise search engines can put your site into their index but won't give enough relevance for ranking.\n>\n> It is enough to submit a home page only; SE bots will follow the links on a home page and index the rest of the pages. There is no reason to submit a site if it's already listed; this won't help you improve your rankings and is a waste of time.\n>\n> Use our Submission Tool for automatic submission of your site.\n> If you have a site that has dynamic URLS (they have ?'s, &'s and ='s, lots of numbers and random characters) then use this Advanced Guide to ensure you're getting your site completely indexed.",
+      "labels": ["optimisation", "tech"],
+      "estimate": 1,
+      "epicId": 3
+    },
+    {
+      "title": "Soumettre les pages manuellement",
+      "body": "## Description\nSoumettre les pages aux moteurs de recherche qui n'acceptent que les soumissions manuelles.\n\n## Détails webceo.com\n> Assistant: Submission Tool\n>\n> To submit your pages to the search engines that accept manual submissions, go to the submission page of each search engine, and fulfill the process manually.\n>\n> You may use our Submission Tool.",
+      "labels": ["optimisation", "site", "tech"],
+      "estimate": 1,
+      "epicId": 3
     }
   ]
 }
