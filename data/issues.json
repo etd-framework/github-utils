@@ -1,6 +1,11 @@
 {
   "vitrine": [
     {
+      "title": "Brief Client",
+      "body": "## Contacts\n\nNom du contact\nCoordonnées\n\n## Description du projet\n\n\n## Analyse\n\n\n## Éléments\n\n\n",
+      "labels": ["administratif", "discussion"]
+    },
+    {
       "title": "Contrat d'hébergement",
       "body": "",
       "labels": ["administratif", "corvée"],
@@ -109,7 +114,7 @@
       "body": "## Description\nCréer un certificat SSL et forcer le site en HTTPS. -> Voir la [doc](https://github.com/jbanety/docs/blob/master/Mutu/Mise%20en%20place%20d'un%20certificat%20SSL/README.md)",
       "labels": ["boum", "corvée", "site", "seo", "tech"],
       "estimate": 1
-    }
+    },
     {
       "title": "Créer le \"faux\" sitemap.xml",
       "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
