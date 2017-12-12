@@ -3,7 +3,8 @@
     {
       "title": "Brief Client",
       "body": "## Contacts\n\nNom du contact\nCoordonnées\n\n## Description du projet\n\n\n## Analyse\n\n\n## Éléments\n\n\n",
-      "labels": ["administratif", "discussion"]
+      "labels": ["administratif", "discussion"],
+      "pipeline": 1
     },
     {
       "title": "Contrat d'hébergement",

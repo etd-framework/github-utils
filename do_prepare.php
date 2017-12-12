@@ -166,8 +166,12 @@ if ($create_issues) {
                     $zenhub->issues->estimate($gh_repo->id, $gh_issue->number, $issue->estimate);
                 }
 
-                // On passe l'issue sur le pipeline Backlog.
-                $zenhub->issues->moves($gh_repo->id, $gh_issue->number, $zh_board->pipelines[2]->id, 'bottom');
+                // On passe l'issue dans le bon pipeline.
+                $pipeline_key = 2; // Par défaut, c'est Backlog.
+                if (isset($issue->pipeline)) {
+                  $pipeline_key = (int) $issue->pipeline;
+                }
+                $zenhub->issues->moves($gh_repo->id, $gh_issue->number, $zh_board->pipelines[$pipeline_key]->id, 'bottom');
 
                 // Epic
                 if (isset($issue->isEpic) && $issue->isEpic === true) {
