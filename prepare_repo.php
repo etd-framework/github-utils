@@ -86,6 +86,11 @@ if (!$uri->isSSL()) {
         <div class="form-group">
             <div class="checkbox">
                 <label>
+                    <input type="checkbox" name="create_branches" value="1" autocomplete="off" checked> Créer les branches
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
                     <input type="checkbox" name="create_labels" value="1" autocomplete="off" checked> Créer les labels
                 </label>
             </div>

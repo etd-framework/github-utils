@@ -14,6 +14,7 @@ $zenhub_token  = $input->get('zenhub_token', '', 'string');
 $create_issues = $input->get('create_issues', false, 'bool');
 $create_labels = $input->get('create_labels', false, 'bool');
 $create_tmpl   = $input->get('create_templates', false, 'bool');
+$create_brchs  = $input->get('create_branches', false, 'bool');
 $project_type  = $input->get('project_type', '', 'cmd');
 
 if (empty($github_token) || empty($github_owner) || empty($github_repo)) {
@@ -118,6 +119,7 @@ if ($create_labels) {
 
 }
 
+// Templates
 if ($create_tmpl) {
 
     echo "<hr>";
@@ -139,6 +141,40 @@ if ($create_tmpl) {
 
 }
 
+// Branches
+if ($create_brchs) {
+
+    echo "<hr>";
+    echo "<h1>Branches</h1>";
+
+    try {
+
+        $refs = $github->data->refs->getList($github_owner, $github_repo);
+
+        // On récupère la branche master
+        $master_sha = null;
+        foreach ($refs as $ref) {
+            if ($ref->ref == "refs/heads/master") {
+                $master_sha = $ref->object->sha;
+            }
+        }
+
+        // Si on a trouvé la branche "master", on crée les branches depuis les données json.
+        if (isset($master_sha)) {
+            $branches = json_decode(file_get_contents(__DIR__."/data/branches.json"));
+            foreach ($branches as $branch) {
+                $github->data->refs->create($github_owner, $github_repo, "refs/heads/" . $branch, $master_sha);
+                echo "Branche &laquo;" . $branch  . "&raquo; créée.<br>";
+            }
+        }
+
+    } catch (\Exception $e) {
+        echo($e->getCode() . " : " . $e->getMessage());
+    }
+    
+}
+
+// Issues
 if ($create_issues) {
 
     echo "<hr>";
