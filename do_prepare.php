@@ -31,9 +31,23 @@ echo "Owner : " . $github_owner . " | Repo : " . $github_repo;
 
 // On récupère le repo sur GitHub.
 try {
+
     $gh_repo = $github->repositories->get($github_owner, $github_repo);
+
 } catch (\Exception $e) {
-    die($e->getCode() . " : " . $e->getMessage());
+
+    // Si le répo n'existe pas, on le crée.
+    if ($e->getCode() == 404) {
+
+        echo "<br>Le repo n'existe pas, on le créé. ";
+
+        $gh_repo = $github->repositories->create($github_repo, '', '', '', true, true, false, false, 0, true);
+
+        echo "OK.";
+
+    } else {
+        die($e->getCode() . " : " . $e->getMessage());
+    }
 }
 
 // Labels
