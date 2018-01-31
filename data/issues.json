@@ -25,8 +25,14 @@
       "estimate": 1
     },
     {
-      "title": "Modifier les zones DNS sur OVH",
-      "body": "## Description\nMettre une zone minimale avec redirection email OVH et adresse IP du mutu : 212.83.180.172.\nhttps://www.ovh.com/manager/web\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH",
+      "title": "Modifier les serveurs DNS sur OVH",
+      "body": "## Description\nChanger les serveurs DNS pour le domaine :\n - mutu2.etd-solutions.com\n - sdns2.ovh.net\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Espace web créé sur le mutu",
+      "labels": ["tech", "corvée", "boum"],
+      "estimate": 1
+    },
+    {
+      "title": "DNS Secondaire",
+      "body": "## Description\nAjouter le domaine sur le serveur de DNS secondaire sdns2.ovh.net lié au serveur dédié mutu2.etd-solutions.com.\nhttps://www.ovh.com/manager/dedicated/index.html#/configuration/server/ns3042031.ip-149-202-93.eu?tab=dns\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Zone correctement paramétrée sur le mutu",
       "labels": ["tech", "corvée", "boum"],
       "estimate": 1
     },
