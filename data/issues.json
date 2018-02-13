@@ -25,6 +25,12 @@
       "estimate": 1
     },
     {
+      "title": "Activer la compression GZIP sur le mutu",
+      "body": "Dans l'espace web, cliquer sur **Paramètres d'Apache et Nginx**.\n Ajouter ces lignes dans **Directives supplémentaires Nginx** :\n\n```nginx\n# enable gzip compression\ngzip on;\ngzip_min_length 1100;\ngzip_buffers 4 32k;\ngzip_types text/plain application/javascript application/x-javascript text/xml text/css;\ngzip_vary on;\n# end gzip configuration\n```",
+      "labels": ["corvée", "boum", "tech", "serveur"],
+      "estimate": 1
+    },
+    {
       "title": "Modifier les serveurs DNS sur OVH",
       "body": "## Description\nChanger les serveurs DNS pour le domaine :\n - mutu2.etd-solutions.com\n - sdns2.ovh.net\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Espace web créé sur le mutu",
       "labels": ["tech", "corvée", "boum"],
