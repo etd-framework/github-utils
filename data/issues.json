@@ -193,6 +193,12 @@
       "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
       "labels": ["boum", "corvée", "site", "seo"],
       "estimate": 1
+    },
+    {
+      "title": "Mettre la fidélisation dans l'agenda (tous les 6 mois)",
+      "body": "## Description\nMettre un rappel de contact des clients tous les 6 mois après la mise en ligne du site.",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
     }
   ],
   "seo": [
