@@ -99,6 +99,18 @@
       "estimate": 1
     },
     {
+      "title": "Mettre un menu responsive design",
+      "body": "## Description\nTravailler le design du menu de façon à ce qu'il soit responsive.",
+      "labels": ["contenu", "site", "design"],
+      "estimate": 2
+    },
+    {
+      "title": "Travailler le responsive design sur l'ensemble des pages",
+      "body": "## Description\nTravailler le responsive design sur l'ensemble des pages de façon à ce que tout s'affiche correctement sur tous les types de devices.",
+      "labels": ["contenu", "site", "design"],
+      "estimate": 3
+    },
+    {
       "title": "Optimiser la conf Apache",
       "body": "## Description\nOn optimise la configuration du serveur pour améliorer les temps de réponse, sécuriser les accès aux scripts, et le SEO.\n`.htaccess chez` [HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess)\n\n#### Optimisation SEO : un seul domaine actif (www.xxxxx.fr ou xxxxx.fr pas les 2)\nVoir section `Suppressing / Forcing the `www.` at the beginning of URLs` dans le `.htaccess`\n\nNe pas oublier de mixer avec le .htaccess de Joomla pour l'URL Rewriting.",
       "labels": ["boum", "optimisation", "site"],
