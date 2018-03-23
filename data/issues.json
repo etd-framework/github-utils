@@ -19,30 +19,6 @@
       "estimate": 1
     },
     {
-      "title": "Création d'un espace web sur serveur mutu",
-      "body": "## Sous-tâches\n- [ ] Créer l'espace web\n - [ ] Ajouter les logins/mdp à Keepass",
-      "labels": ["corvée", "boum", "tech", "serveur"],
-      "estimate": 1
-    },
-    {
-      "title": "Activer la compression GZIP sur le mutu",
-      "body": "Dans l'espace web, cliquer sur **Paramètres d'Apache et Nginx**.\n Ajouter ces lignes dans **Directives supplémentaires Nginx** :\n\n```nginx\n# enable gzip compression\ngzip on;\ngzip_min_length 1100;\ngzip_buffers 4 32k;\ngzip_types text/plain application/javascript application/x-javascript text/xml text/css;\ngzip_vary on;\n# end gzip configuration\n```",
-      "labels": ["corvée", "boum", "tech", "serveur"],
-      "estimate": 1
-    },
-    {
-      "title": "Modifier les serveurs DNS sur OVH",
-      "body": "## Description\nChanger les serveurs DNS pour le domaine :\n - mutu2.etd-solutions.com\n - sdns2.ovh.net\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Espace web créé sur le mutu",
-      "labels": ["tech", "corvée", "boum"],
-      "estimate": 1
-    },
-    {
-      "title": "DNS Secondaire",
-      "body": "## Description\nAjouter le domaine sur le serveur de DNS secondaire sdns2.ovh.net lié au serveur dédié mutu2.etd-solutions.com.\nhttps://www.ovh.com/manager/dedicated/index.html#/configuration/server/ns3042031.ip-149-202-93.eu?tab=dns\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Zone correctement paramétrée sur le mutu",
-      "labels": ["tech", "corvée", "boum"],
-      "estimate": 1
-    },
-    {
       "title": "Maquette graphique",
       "body": "## Description\nFaire la maquette graphique des différentes pages :\n- [ ] Page d'accueil\n - [ ] ",
       "labels": ["design", "Epic", "site"],
@@ -73,12 +49,6 @@
       "body": "## Description\nInstallation et configuration Grunt.\n- [ ] Fichier `package.json` de base sur [Gist](https://gist.github.com/klawuy/21c4bad1a64a486467eeccdc8f3d1d70)\n- [ ] Executer la commande `yarn install` dans le template\n- [ ] Fichier `Grunfile.js` de base sur [Gist](https://gist.github.com/klawuy/7174406227e9db3ba5bdca5af7d21d90)\n- [ ] Executer la commande `grunt sync` dans le template\n- [ ] Executer la commande `grunt` dans le template",
       "labels": ["boum", "corvée", "site"],
       "estimate": 1
-    },
-    {
-      "title": "Optimisation Référencement SEO",
-      "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
-      "labels": ["tech", "corvée", "site", "seo"],
-      "estimate": 2
     },
     {
       "title": "Mettre en place le composant OSMap",
@@ -117,7 +87,7 @@
       "estimate": 1
     },
     {
-      "title": "Ajouter les mentions légales",
+      "title": "Ajouter l'article des mentions légales",
       "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
       "labels": ["contenu", "corvée", "site"],
       "estimate": 1
@@ -192,6 +162,36 @@
       "title": "Mettre à jour le lien du site pour le sitemap",
       "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
       "labels": ["boum", "corvée", "site", "seo"],
+      "estimate": 1
+    },
+    {
+      "title": "Optimisation Référencement SEO",
+      "body": "## Description\nOn optimise :\n - [ ] Textes des articles en fonction des mots clés\n - [ ] Balises Titre des pages\n - [ ] Balises Meta Description",
+      "labels": ["tech", "corvée", "site", "seo"],
+      "estimate": 2
+    },
+    {
+      "title": "Création d'un espace web sur serveur mutu",
+      "body": "## Sous-tâches\n- [ ] Créer l'espace web\n - [ ] Ajouter les logins/mdp à Keepass",
+      "labels": ["corvée", "boum", "tech", "serveur"],
+      "estimate": 1
+    },
+    {
+      "title": "Activer la compression GZIP sur le mutu",
+      "body": "Dans l'espace web, cliquer sur **Paramètres d'Apache et Nginx**.\n Ajouter ces lignes dans **Directives supplémentaires Nginx** :\n\n```nginx\n# enable gzip compression\ngzip on;\ngzip_min_length 1100;\ngzip_buffers 4 32k;\ngzip_types text/plain application/javascript application/x-javascript text/xml text/css;\ngzip_vary on;\n# end gzip configuration\n```",
+      "labels": ["corvée", "boum", "tech", "serveur"],
+      "estimate": 1
+    },
+    {
+      "title": "Modifier les serveurs DNS sur OVH",
+      "body": "## Description\nChanger les serveurs DNS pour le domaine :\n - mutu2.etd-solutions.com\n - sdns2.ovh.net\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Espace web créé sur le mutu",
+      "labels": ["tech", "corvée", "boum"],
+      "estimate": 1
+    },
+    {
+      "title": "DNS Secondaire",
+      "body": "## Description\nAjouter le domaine sur le serveur de DNS secondaire sdns2.ovh.net lié au serveur dédié mutu2.etd-solutions.com.\nhttps://www.ovh.com/manager/dedicated/index.html#/configuration/server/ns3042031.ip-149-202-93.eu?tab=dns\n\n## Prérequis\n - [ ] Domaine acheté et dispo dans le manager OVH\n - [ ] Zone correctement paramétrée sur le mutu",
+      "labels": ["tech", "corvée", "boum"],
       "estimate": 1
     },
     {
