@@ -109,7 +109,8 @@ if (!$uri->isSSL()) {
             <div class="form-group">
                 <label for="project_type">Type de projet</label>
                 <select class="form-control" id="project_type" name="project_type">
-                    <option value="vitrine">Site vitrine</option>
+                    <option value="joomla">Site vitrine Joomla!</option>
+                    <option value="grav">Site vitrine Grav</option>
                     <option value="seo">SEO</option>
                 </select>
             </div>

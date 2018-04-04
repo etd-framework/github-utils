@@ -75,21 +75,9 @@
       "estimate": 1
     },
     {
-      "title": "Installer le plugin etdeucookie",
-      "body": "## Description\nPlugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)\n - [ ] Activer le plugin depuis l'administration de Joomla!",
-      "labels": ["boum", "corvée", "site"],
-      "estimate": 1
-    },
-    {
       "title": "Installer le plugin etdoptimizer",
       "body": "## Description\nPlugin d'optimisation du code HTML pour plusieurs CMS.\nDernière release à télécharger sur [GitHub](https://github.com/etd-framework/etdoptimizer/releases/latest)\n\n## Sous-tâches\n - [ ] Faire un `composer install`\n - [ ] Activer le plugin depuis l'administration de Joomla!",
       "labels": ["boum", "corvée", "site"],
-      "estimate": 1
-    },
-    {
-      "title": "Ajouter l'article des mentions légales",
-      "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)",
-      "labels": ["contenu", "corvée", "site"],
       "estimate": 1
     },
     {
@@ -111,6 +99,18 @@
       "estimate": 3
     },
     {
+      "title": "Installer le plugin etdeucookie",
+      "body": "## Description\nInstaller le plugin Joomla pour afficher l'avertissement sur l'utilisation des cookies.\nDernière release à télécharger sur [GitHub](https://github.com/jbanety/plg_system_etdeucookie/releases/latest)\n - [ ] Activer le plugin depuis l'administration de Joomla!\n - [ ] Changer les couleurs dans le plugin pour qu'elles correspondent à celle du site.",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Ajouter l'article des mentions légales",
+      "body": "## Description\nCréer l'article Mentions légales.\nArticle de base sur [Gist](https://gist.githubusercontent.com/jbanety/7f1206cf1a126750c62a5859cc324d09/raw/mentions-legales.html)\nModifier les informations concernant l'entreprise :\n- [ ] Nom de l'entreprise/institution\n - [ ] Coordonnées de l'entreprise/institution\n - [ ] Nom de domaine du site web de l'entreprise/institution",
+      "labels": ["contenu", "corvée", "site"],
+      "estimate": 1
+    },
+    {
       "title": "Optimiser la conf Apache",
       "body": "## Description\nOn optimise la configuration du serveur pour améliorer les temps de réponse, sécuriser les accès aux scripts, et le SEO.\n`.htaccess chez` [HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess)\n\n#### Optimisation SEO : un seul domaine actif (www.xxxxx.fr ou xxxxx.fr pas les 2)\nVoir section `Suppressing / Forcing the `www.` at the beginning of URLs` dans le `.htaccess`\n\nNe pas oublier de mixer avec le .htaccess de Joomla pour l'URL Rewriting.",
       "labels": ["boum", "optimisation", "site"],
@@ -124,7 +124,7 @@
     },
     {
       "title": "Créer le \"faux\" sitemap.xml",
-      "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui chope le contenu du XML généré par le composant OSMap et le sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)",
+      "body": "## Description\nJoomla étant dynamique on crée un faux /sitemap.xml qui récupère le contenu du XML généré par le composant OSMap et s'en sert comme si c'était un fichier XML.\n/sitemap.xml <===> /sitemap.php <===> /index.php?option=com_osmap&view=xml&id=1\n\nÉtapes :\n - [ ] Créer le fichier `sitemap.php` à la racine du site ([Gist](https://gist.github.com/jbanety/55e2c0c8c5633f4e5611556026ea0964))\n - [ ] Modifier `.htaccess` pour rewriter `/sitemap.xml` vers `/sitemap.php` [Gist](https://gist.github.com/jbanety/6eb5979beb32ce016af955105d2f80b3)\n - [ ] Mettre à jour le lien du site pour le sitemap dans sitemap.php (Nom de domaine du site web de l'entreprise/institution).",
       "labels": ["boum", "corvée", "site", "seo"],
       "estimate": 1
     },
@@ -155,24 +155,6 @@
     {
       "title": "Changer les microdata dans l'index.php du template",
       "body": "## Description\nChanger les microdata dans l'index.php du template pour correspondre à l'entreprise\n\n## Prérequis\n - [ ] Nom de domaine créé\n - [ ] Contrat d'hébergement",
-      "labels": ["boum", "corvée", "site", "seo"],
-      "estimate": 1
-    },
-    {
-      "title": "Mettre à jour les couleurs du message des cookies",
-      "body": "## Description\nMettre à jour les couleurs de fond et de texte du plugin ETDEUCookies pour qu'elles correspondent à celles du site.\n\n## Prérequis\n - [ ] Installation du plgin ETDEUCookies",
-      "labels": ["boum", "corvée", "site"],
-      "estimate": 1
-    },
-    {
-      "title": "Mettre à jour les informations des mentions légales",
-      "body": "## Description\nMettre à jour les informations des mentions légales correspondent à celles du site.\n\n## Prérequis\n - [ ] Nom de l'entreprise/institution\n - [ ] Coordonnées de l'entreprise/institution\n - [ ] Nom de domaine du site web de l'entreprise/institution",
-      "labels": ["boum", "corvée", "site"],
-      "estimate": 1
-    },
-    {
-      "title": "Mettre à jour le lien du site pour le sitemap",
-      "body": "## Description\nMettre à jour le lien du site pour le sitemap dans sitemap.php.\n\n## Prérequis\n - [ ] Nom de domaine du site web de l'entreprise/institution",
       "labels": ["boum", "corvée", "site", "seo"],
       "estimate": 1
     },
@@ -210,6 +192,46 @@
       "title": "Mettre la fidélisation dans l'agenda (tous les 6 mois)",
       "body": "## Description\nMettre un rappel de contact des clients tous les 6 mois après la mise en ligne du site.",
       "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    }
+  ],
+  "grav":[
+    {
+      "title": "Brief Client",
+      "body": "## Contacts\n\nNom du contact\nCoordonnées\n\n## Description du projet\n\n\n## Analyse\n\n\n## Éléments\n\n\n",
+      "labels": ["administratif", "discussion"],
+      "pipeline": 1
+    },
+    {
+      "title": "Contrat d'hébergement",
+      "body": "",
+      "labels": ["administratif", "corvée"],
+      "estimate": 1
+    },
+    {
+      "title": "Acheter/Transférer le nom de domaine",
+      "body": "## Description\nAcheter le nom de domaine sur OVH : https://www.ovh.com/fr/order/domain",
+      "labels": ["administratif", "corvée", "boum"],
+      "estimate": 1
+    },
+    {
+      "title": "Maquette graphique",
+      "body": "## Description\nFaire la maquette graphique des différentes pages :\n- [ ] Page d'accueil\n - [ ] ",
+      "labels": ["design", "Epic", "site"],
+      "isEpic": true,
+      "epicId": 1
+    },
+    {
+      "title": "Prototype HTML",
+      "body": "## Description\nPrototypage de la maquette en HTML5/CSS3",
+      "labels": ["design", "Epic", "site"],
+      "isEpic": true,
+      "epicId": 2
+    },
+    {
+      "title": "Installation et configuration de Grav",
+      "body": "## Description\nInstallation et configuration de Grav\n\n## Sous-tâches\n - [ ] Télécharger Grav sur [getgrav.org](https://getgrav.org/downloads)\n - [ ] Installer Grav\n - [ ] Ajouter le logins/mdp admin à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess`" ,
+      "labels": ["45mins", "corvée", "site"],
       "estimate": 1
     }
   ],
