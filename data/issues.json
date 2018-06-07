@@ -230,8 +230,14 @@
     },
     {
       "title": "Installation et configuration de Grav",
-      "body": "## Description\nInstallation et configuration de Grav\n\n## Sous-tâches\n - [ ] Télécharger Grav sur [getgrav.org](https://getgrav.org/downloads)\n - [ ] Installer Grav\n - [ ] Ajouter le logins/mdp admin à Keepass\n - [ ] Renommer `htaccess.txt` en `.htaccess`" ,
-      "labels": ["45mins", "corvée", "site"],
+      "body": "## Description\nInstallation et configuration de Grav\n\n## Sous-tâches\n - [ ] Télécharger _GRAV CORE + ADMIN PLUGIN_ sur [getgrav.org](https://getgrav.org/downloads)\n - [ ] Décompresser le dossier compressé téléchargé et copier les éléments dans le dossier root du projet\n - [ ] Se rendre à l'url du projet et compléter les informations demandées\n - [ ] Ajouter le login et le mot de passe admin à Keepass\n - [ ] Lancer les mises à jour de plugins s'il y en a" ,
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    },
+    {
+      "title": "Installation et configuration du thème Grav",
+      "body": "## Description\nInstallation et configuration du thème Grav\nProcédure : [Theme Tutorial](https://learn.getgrav.org/themes/theme-tutorial)" ,
+      "labels": ["boum", "corvée", "site"],
       "estimate": 1
     }
   ],
