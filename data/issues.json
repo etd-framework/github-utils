@@ -230,7 +230,7 @@
     },
     {
       "title": "Installation et configuration de Grav",
-      "body": "## Description\nInstallation et configuration de Grav\n\n## Sous-tâches\n - [ ] Télécharger _GRAV CORE + ADMIN PLUGIN_ sur [getgrav.org](https://getgrav.org/downloads)\n - [ ] Décompresser le dossier compressé téléchargé et copier les éléments dans le dossier root du projet\n - [ ] Se rendre à l'url du projet et compléter les informations demandées\n - [ ] Ajouter le login et le mot de passe admin à Keepass\n - [ ] Lancer les mises à jour de plugins s'il y en a\n - [ ] Créer le fichier `.gitignore` à la racine du dossier web (voir [contenu](https://gist.github.com/maxencedelattre/212a29b42f99ba9299b700b11d66141b))\n - [ ] Créer le fichier `.dependencies` à la racine du dossier web (voir [contenu](https://gist.github.com/maxencedelattre/03ec8a9174724726d7c548bc944db39e))\n - [ ] Ouvrir un terminal et éxécuter la commande suivante\n```\ncd ~/<webroot>\nbin/grav install\n```" ,
+      "body": "## Description\nInstallation et configuration de Grav\n\n## Sous-tâches\n - [ ] Télécharger _GRAV CORE + ADMIN PLUGIN_ sur [getgrav.org](https://getgrav.org/downloads)\n - [ ] Décompresser le dossier compressé téléchargé et copier les éléments dans le dossier root du projet\n - [ ] Se rendre à l'url du projet et compléter les informations demandées\n - [ ] Ajouter le login et le mot de passe admin à Keepass\n - [ ] Lancer les mises à jour de plugins s'il y en a\n - [ ] Créer le fichier `.gitignore` à la racine du dossier web (voir [contenu](https://gist.github.com/maxencedelattre/212a29b42f99ba9299b700b11d66141b))\n - [ ] Créer le fichier `.dependencies` à la racine du dossier web (voir [contenu](https://gist.github.com/maxencedelattre/03ec8a9174724726d7c548bc944db39e))\n - [ ] Ouvrir un terminal et éxécuter la commande suivante\n```\ncd ~/<webroot>\nbin/grav install\n```\n - [ ] Ajouter ```\n\tsupported:\n\t\t- fr\n\t\t- en\n``` au paramètre `languages:` dans `~/<webroot>/user/config/system.yaml`" ,
       "labels": ["boum", "corvée", "site"],
       "estimate": 1
     },
@@ -246,6 +246,12 @@
       "labels": ["boum", "corvée", "site", "seo", "tech"],
       "estimate": 1
     },
+    {
+      "title": "Mettre la fidélisation dans l'agenda (tous les 6 mois)",
+      "body": "## Description\nMettre un rappel de contact des clients tous les 6 mois après la mise en ligne du site.",
+      "labels": ["boum", "corvée", "site"],
+      "estimate": 1
+    }
   ],
   "seo": [
     {
