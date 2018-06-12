@@ -239,7 +239,13 @@
       "body": "## Description\nInstallation et configuration du thème Grav\n\n## Procédure\n - [ ] Ouvrir un terminal et éxécuter les commandes suivantes\n```\ncd ~/<webroot>\nbin/gpm install devtools\nbin/plugin devtools new-theme\n```\n - [ ] Choisir `copy` pour `Copy another theme` puis choisir `etdsolutions`\n - [ ] Ajouter le fichier `.npmrc` pour FontAwesome dans le thème (`~/<webroot>/user/themes/<theme_name>`)\n - [ ] Exécuter les commandes suivantes\n```\ncd ~/<webroot>/user/themes/<theme_name>\nyarn install\ncp -f node_modules/bootstrap/scss/_variables.scss scss/\nyarn css\nyarn js\n```\n - [ ] Modifier le fichier `system.yaml` dans `~/<webroot>/user/config/` et remplacer `theme: quark` par `theme: <theme_name>`\n - [ ] Modifier le fichier `system.yaml` dans `~/<webroot>/user/config/` et remplacer\n```\ncollections:\n\tjquery: 'system://assets/jquery/jquery-2.x.min.js'\n```\npar\n```\ncollections:\n\tjquery: 'https://code.jquery.com/jquery-3.2.1.slim.min.js'\nbootstrap_deps:\n\t- 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'\n\t- 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'\n```",
       "labels": ["boum", "corvée", "site"],
       "estimate": 1
-    }
+    },
+    {
+      "title": "Passer le site en https",
+      "body": "## Description\nCréer un certificat SSL et forcer le site en HTTPS. -> Voir la [doc](https://github.com/jbanety/docs/blob/master/Mutu/Mise%20en%20place%20d'un%20certificat%20SSL/README.md)",
+      "labels": ["boum", "corvée", "site", "seo", "tech"],
+      "estimate": 1
+    },
   ],
   "seo": [
     {
